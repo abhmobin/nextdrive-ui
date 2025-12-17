@@ -2783,7 +2783,7 @@ button.navbar-toggler:focus {
 }
 
 .slider-image {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 }
 
 .slider-image .slider-item img{
@@ -2842,6 +2842,37 @@ button.navbar-toggler:focus {
     margin-right: 50px;
 }
 
+.car_item_heading span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #623030;
+}
+
+.car_item_heading p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #8E8D92;
+    
+}
+/*
+.popular-car-requests .popular-car-requests-item{
+    width: 100%;
+    background-color: #F8F8F8;
+    border-radius: 30px;
+    padding: 8px 30px;
+}
+
+.popular-car-requests a{
+    font-size: 12px;
+    color: #351616;
+    line-height: 30px;
+}
+
+.popular-car-requests .popular-car-requests-item:hover{
+    border: 1px solid var(--dark-red);
+    background-color: var(--light-red);
+}
+*/
 /* --------------------- */
 
 #offcanvasScrolling.offcanvas.offcanvas-start {
@@ -3056,39 +3087,7 @@ button.navbar-toggler:focus {
     }
 }
 
-.car_card img {
-    width: 100%;
-}
-
-.car_card h3 {
-    color: rgb(41, 40, 38);
-    font-size: 16px;
-    line-height: 15px;
-    font-weight: 700;
-}
-
-.car_card h4 {
-    color: rgb(234, 44, 45);
-    font-size: 16px;
-    line-height: 15px;
-    font-weight: 700;
-}
-
-.car_card p {
-    color: rgb(142, 138, 131);
-    font-size: 14px;
-    line-height: 15px;
-}
-
-.car_card h5 {
-    color: rgb(41, 40, 38);
-    font-size: 16px;
-    line-height: 15px;
-    font-weight: 700;
-}
-
 .car_card {
-    background-color: rgb(246, 247, 247);
     margin-top: 10px;
     transition: all 0.4s ease-in-out 0s;
     position: relative;
@@ -3099,8 +3098,70 @@ button.navbar-toggler:focus {
     padding: 5px 0px;
 }
 
+.car_card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.car_card .car_details h3 {
+    color: #351616;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.car_card .car_details h4 {
+    color: #8E8D92;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.car_card .car_details p {
+    color: #8E8D92;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.car_card .car_details .v-line{
+    height: 12px;
+    border: 1px solid #E2E2E2;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.car_card .car_details h5 {
+    color: #EA2C2D;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
 .car_card:hover {
     transform: scale(1.05);
+}
+
+.car-paginate-btn {
+    width: 10%;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--dark-red);
+    border: 1px solid var(--dark-red);
+    border-radius: 30px;
+    background-color: var(--light-red);
+    padding: 8px 10px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.car-paginate-btn:hover {
+    color: var(--light-red);
+    border-color: var(--light-red);
+    border-radius: 30px;
+    background-color: var(--dark-red);
+}
+
+.car-section-divider {
+    width: 100%;
 }
 
 .sale_badge {
