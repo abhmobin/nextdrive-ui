@@ -579,9 +579,11 @@ label[data-color="black m"] {
     padding: 10px 0px;
 }
 
-.brand_list {
-    border-right: 1px solid rgb(240, 240, 240);
-    padding: 0px 15px;
+.brand_list ul {
+    background-color: #f8f8f8;
+    padding: 8px 0;
+    padding-left: 5px;
+    border-radius: 20px;
 }
 
 .brand_list ul {
@@ -611,9 +613,17 @@ label[data-color="black m"] {
     cursor: pointer !important;
 }
 
+.popular-search ul{
+    text-align: left;
+}
+
 .brand_list ul li a .brand_logo {
     width: 30px;
     margin-right: 10px;
+}
+
+.popular-search ul li a{
+    line-height: 1.5;
 }
 
 .cars_list_title {
@@ -857,34 +867,24 @@ label[data-color="black m"] {
 }
 
 footer {
-    background-color: rgb(243, 244, 244);
     padding: 50px 0px 0px;
-    margin-top: -20px;
 }
 
-footer p {
-    font-size: 16px;
-    color: rgb(33, 37, 41);
+footer p,
+footer p a {
+    font-size: 14px;
+    color: #727489;
     margin: 5px 0px;
-}
-
-footer .first {
-    font-size: 14px !important;
+    font-weight: normal;
 }
 
 .desktop_hide {
     display: none;
 }
 
-footer a {
-    color: rgb(0, 0, 0);
-    padding-left: 5px;
-}
-
-.quick_list h5,
-.social_icon h5 {
-    color: rgb(203, 10, 7);
-    font-weight: 700;
+.quick_list h5{
+    color: #351616;
+    font-weight: 500;
     font-size: 16px;
     margin-bottom: 15px;
 }
@@ -898,38 +898,7 @@ footer a {
 .quick_list ul li a {
     color: rgb(0, 0, 0);
     font-size: 14px;
-    padding-left: 10px;
-    position: relative;
-}
-
-.quick_list ul li a::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    transform: translate(-50%);
-    height: 2px;
-    width: 2px;
-    background-color: rgb(0, 0, 0);
-}
-
-footer a {
-    color: rgb(0, 0, 0);
-    padding-left: 5px;
-}
-
-.social_icon ul {
-    display: flex;
-    list-style: none;
-}
-
-.social_icon ul li {
-    margin-right: 5px;
-}
-
-.social_icon ul li a {
-    font-size: 15px;
-    color: rgb(203, 10, 7) !important;
+    color: #727489;
 }
 
 .total {
@@ -1152,15 +1121,12 @@ button.navbar-toggler:focus {
 }
 
 .copyright {
-    background-color: rgb(203, 10, 7);
     padding: 4px 0px;
-    margin-top: 40px;
 }
 
 .copyright p {
-    color: rgb(255, 255, 255);
+    color: #727489;
     font-size: 14px;
-    text-align: center;
 }
 
 .sidebar_title {
