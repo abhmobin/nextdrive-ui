@@ -727,45 +727,89 @@ label[data-color="black m"] {
 }
 
 .post_items {
-    border: 1px solid rgb(203, 10, 7);
+    background-color: #f8f8f8;
+    padding-bottom: 20px;
+    border-radius: 30px;
 }
 
 .post_items img {
-    padding: 5px;
+    border-radius: 30px;
 }
 
 .post_items h3 {
     margin: 10px;
-    font-size: 16px;
+    margin-bottom: 20px;
+    font-size: 14px;
     line-height: 24px;
     color: rgb(0, 0, 0);
     font-weight: 600;
-}
-
-.post_items button {
-    color: rgb(255, 255, 255);
-    background-color: rgb(203, 10, 7);
-    width: 100%;
-    padding: 4px 0px;
-    border: none;
-}
-
-button:hover {
-    background-color: rgb(0, 0, 0);
+    padding-left: 10px;
 }
 
 .post_items a {
-    color: #fff;
-    background-color: rgba(203, 10, 7, 1);
-    width: 100%;
-    padding: 4px 0;
+    color: var(--dark-red);
+    background-color: var(--light-red);
+    padding: 8px 16px;
+    margin-left: 10px;
     border: none;
-    display: block;
-    text-align: center;
+    border-radius: 20px;
+    transition: 0.4s ease-in all;
 }
 
 .post_items a:hover {
-    background-color: #000;
+    color: var(--light-red);
+    background-color: var(--dark-red);
+}
+
+
+.newsletter-section {
+    background-image: url('../img/newsletter-bg.png');
+    height: 180px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(0.9);
+    border-radius: 30px;
+    text-align: center;
+    padding: 40px;
+}
+
+.newsletter-section p{
+    font-size: 12px;
+    color: #f8f8f8;
+    font-weight: 500;
+}
+
+.newsletter-section h3{
+    color: var(--dark-red);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.newsletter-section form{
+    margin-top: 5px;
+}
+
+.newsletter-section form input{
+    padding: 10px 16px;
+    background-color: #F2EBEB;
+    border: 1px solid var(--light-red);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 12px;
+
+}
+
+.newsletter-section form button {
+    padding: 10px 16px;
+    margin-left: -6px;
+    background-color: var(--dark-red);
+    border: 1px solid var(--dark-red);
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 12px;
 }
 
 .ad_image {
@@ -886,10 +930,6 @@ footer a {
 .social_icon ul li a {
     font-size: 15px;
     color: rgb(203, 10, 7) !important;
-}
-
-.recent_post {
-    background-color: rgb(255, 255, 255);
 }
 
 .total {
@@ -2854,7 +2894,7 @@ button.navbar-toggler:focus {
     color: #8E8D92;
     
 }
-/*
+
 .popular-car-requests .popular-car-requests-item{
     width: 100%;
     background-color: #F8F8F8;
@@ -2872,7 +2912,7 @@ button.navbar-toggler:focus {
     border: 1px solid var(--dark-red);
     background-color: var(--light-red);
 }
-*/
+
 /* --------------------- */
 
 #offcanvasScrolling.offcanvas.offcanvas-start {

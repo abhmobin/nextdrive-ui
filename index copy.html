@@ -26,7 +26,7 @@
     <!-- header section  -->
     <header>
         <div class="top_bar">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 mobile_none">
                         <ul class="top_bar_left_item">
@@ -65,9 +65,9 @@
         </div>
 
         <div class="main_navbar">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <!-- desktop header  -->
+<!-- desktop header  -->
                     <nav class="navbar navbar-expand-md header_mobile_none">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"><img src="assets/img/top-logo.png" class="img-fluid"
@@ -111,6 +111,327 @@
                 </div>
             </div>
         </div>
+        <div class="main_bar">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!-- Mobile header  -->
+                    <nav class="navbar mobile_nav header_desktop_none">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#"><img src="assets/img/next-drive.png" class="img-fluid"
+                                    alt="" /></a>
+                            <form action="" class="search_by_kw mobile_none">
+                                <input type="text" class="form-control" placeholder="Search By Car.." />
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Search
+                                </button>
+                            </form>
+
+                            <div class="right_nav_items ms-auto">
+                                <ul>
+                                    <li>
+                                        <button class="btn btn-login">Login</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="navbar-toggler dropdown-toggle tablet-hide" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                                aria-controls="staticBackdrop">
+                                <div class="menu example5"><span></span></div>
+                            </button>
+                            <div class="offcanvas offcanvas-start desktop_hide" data-bs-scroll="true"
+                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                                aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+                                <div class="offcanvas-body ">
+                                    <ul class="">
+                                        <li>
+                                            <div class="my_menu">
+                                                <i class="fa-solid fa-car"></i>
+                                                <a href="">My Menu</a>
+                                            </div>
+                                            <button class="customer_btn">Customer Login</button>
+                                        </li>
+                                        <li>
+                                            <label for="currency">Currency</label>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    USD
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-dark">
+                                                    <li><a class="dropdown-item active" href="#">JPY</a></li>
+                                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                                    <li><a class="dropdown-item" href="#">GBP</a></li>
+                                                    <li><a class="dropdown-item" href="#">BDT</a></li>
+                                                    <li><a class="dropdown-item" href="#">AUD</a></li>
+                                                    <li><a class="dropdown-item" href="#">CAD</a></li>
+                                                    <li><a class="dropdown-item" href="#">TZS</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <a href="">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Contact</a>
+                                        </li>
+                                        <li>
+                                            <div class="my_menu">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <a href="">Search Used Cars</a>
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid moile-search-block">
+                            <form action="" class="search_by_kw desktop_hide">
+                                <input type="text" class="form-control" placeholder="Search By Car.." />
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Search
+                                </button>
+                            </form>
+                            <button class="btn desktop_hide btn-login" data-bs-toggle="offcanvas"
+                                data-bs-target="#filterOption" aria-controls="staticBackdrop">Filter</button>
+                            <!-- search form offcanvas  -->
+                            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1"
+                                id="filterOption" aria-labelledby="staticBackdropLabel">
+                                <div class="offcanvas-header justify-content-between">
+                                    <p>Advanced Filter</p>
+                                    <div>
+                                        <button type="button" class="reset-filter btn btn-outline-secondary ms-2">Reset
+                                            Filter</button>
+                                        <button type="button" class="close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close">
+                                            <i class="fa-regular fa-circle-xmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div>
+                                        <form action="">
+                                            <div class="row gy-3">
+                                                <div class="col-md-3 col-lg">
+                                                    <label for="">Make</label>
+                                                    <select class="select2 form-select">
+                                                        <option value="">Please Select</option>
+                                                        <option value="TOYOTA">TOYOTA</option>
+                                                        <option value="NISSAN">NISSAN</option>
+                                                        <option value="SUZUKI">SUZUKI</option>
+                                                        <option value="HONDA">HONDA</option>
+                                                        <option value="DAIHATSU">DAIHATSU</option>
+                                                        <option value="MAZDA">MAZDA</option>
+                                                        <option value="BMW">BMW</option>
+                                                        <option value="LEXUS">LEXUS</option>
+                                                        <option value="SUBARU">SUBARU</option>
+                                                        <option value="MITSUBISHI">MITSUBISHI</option>
+                                                        <option value="MERCEDES BENZ">MERCEDES BENZ</option>
+                                                        <option value="AUDI">AUDI</option>
+                                                        <option value="PEUGEOT">PEUGEOT</option>
+                                                        <option value="CHRYSLER">CHRYSLER</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-3 col-lg">
+                                                    <label for="">Model</label>
+                                                    <select class="select2 form-select">
+                                                        <option value="">Please Select</option>
+                                                        <option value="TOYOTA">86 (23)</option>
+                                                        <option value="NISSAN">ALPHARD (78)</option>
+                                                        <option value="SUZUKI">ALPHARD HYBRID (67)</option>
+                                                        <option value="HONDA">AQUA (56)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3 col-lg">
+                                                    <label for="">Model Code</label>
+                                                    <select class="select2 form-select">
+                                                        <option value="">Please Select</option>
+                                                        <option value="TOYOTA">DWGE24</option>
+                                                        <option value="NISSAN">DWGE24</option>
+                                                        <option value="SUZUKI">DWGE24</option>
+                                                        <option value="HONDA">DWGE24</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3 col-lg">
+                                                    <label for="">Price (USD)</label>
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-6 px-1">
+                                                                <select class="select2" style="width: 90%;">
+                                                                    <option value="">Min</option>
+                                                                    <option value="TOYOTA">12324</option>
+                                                                    <option value="NISSAN">1243545</option>
+                                                                    <option value="SUZUKI">34534</option>
+                                                                    <option value="HONDA">345345</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-6 px-1">
+                                                                <select class="select2" style="width: 90%;">
+                                                                    <option value="">Max</option>
+                                                                    <option value="TOYOTA">345345</option>
+                                                                    <option value="NISSAN">345345</option>
+                                                                    <option value="SUZUKI">345345</option>
+                                                                    <option value="HONDA">779567</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-lg">
+                                                    <label for="">Year</label>
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-6 px-1">
+                                                                <select class="select2" style="width: 90%;">
+                                                                    <option value="">Min</option>
+                                                                    <option value="TOYOTA">2013</option>
+                                                                    <option value="NISSAN">2012</option>
+                                                                    <option value="SUZUKI">2011</option>
+                                                                    <option value="HONDA">2010</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-6 px-1">
+                                                                <select class="select2" style="width: 90%;">
+                                                                    <option value="">Max</option>
+                                                                    <option value="TOYOTA">2024</option>
+                                                                    <option value="NISSAN">2023</option>
+                                                                    <option value="SUZUKI">2022</option>
+                                                                    <option value="HONDA">2021</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- SECOND ROW (hidden initially) -->
+                                            <div class="row gy-3 mt-3">
+                                                <div class="col-md-3 col-lg-2">
+                                                    <label for="">Engine (CC)</label>
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-6 px-1">
+                                                                <select class="select2" style="width: 90%;">
+                                                                    <option value="">Min</option>
+                                                                    <option>1990</option>
+                                                                    <option>1991</option>
+                                                                    <option>1992</option>
+                                                                    <option>1993</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-6 px-1">
+                                                                <select class="select2" style="width: 90%;">
+                                                                    <option value="">Max</option>
+                                                                    <option>2001</option>
+                                                                    <option>2002</option>
+                                                                    <option>2003</option>
+                                                                    <option>2004</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3 col-lg-2">
+                                                    <label for="">Milage</label>
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-6 px-1">
+                                                                <select class="select2" style="width: 90%;">
+                                                                    <option value="">Min</option>
+                                                                    <option>1000</option>
+                                                                    <option>5000</option>
+                                                                    <option>10000</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-6 px-1">
+                                                                <select class="select2" style="width: 90%;">
+                                                                    <option value="">Max</option>
+                                                                    <option>50000</option>
+                                                                    <option>100000</option>
+                                                                    <option>150000</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3 col-lg-2 mb-3">
+                                                    <label for="">Color</label>
+                                                    <select class="select2 form-select">
+                                                        <option value="">Please Select</option>
+                                                        <option>Red</option>
+                                                        <option>Blue</option>
+                                                        <option>Purple</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-3 col-lg-2 ">
+                                                    <label for="">Drive</label>
+                                                    <select class="select2 form-select">
+                                                        <option value="">Please Select</option>
+                                                        <option>Left</option>
+                                                        <option>Right</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3 col-lg-2">
+                                                    <label for="">Grade (Package)</label>
+                                                    <select class="select2 form-select">
+                                                        <option value="">Please Select</option>
+                                                        <option>AERAS</option>
+                                                        <option>PREMIUM</option>
+                                                        <option>AX</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3 col-lg-2 ">
+                                                    <label for="">Auction Grad</label>
+                                                    <select class="select2" style="width: 100%;">
+                                                        <option value="">Please Select</option>
+                                                        <option>0</option>
+                                                        <option>15</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-4">
+                                                <div class="col-md-12 d-flex align-items-center">
+                                                    <input type="submit" value="Done"
+                                                        class="btn btn-submit form-control">
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </nav>
+                    <!-- Mobile header  -->
+                </div>
+            </div>
+        </div>
     </header>
     <!-- header section  -->
     <!-- search by keyword section  -->
@@ -118,10 +439,10 @@
     <!-- main content section  -->
 
     <section class="main_content">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2 col-lg-2 col-xl-2  tablet-hide custom_padding">
-                    <!-- Search By Car Model  -->
+                    <!-- Search By Car  -->
                     <div class="brand_list brand-margin desktop_brand_list">
                         <div class="sidebar_title">
                             <img src="./assets/img/sidebarcaricon.png" alt="">
@@ -236,7 +557,8 @@
                         </ul>
                     </div>
 
-                    <!-- Popular Search By Price  -->
+
+                    <!-- shope by popular model  -->
                     <div class="brand_list popular-search desktop_brand_list mt-4">
                         <div class="sidebar_title">
                             <img src="./assets/img/sidebarcaricon.png" alt="">
@@ -279,7 +601,7 @@
                         </ul>
                     </div>
 
-                    <!-- Popular Car Model  -->
+                    <!-- Shop By Price  -->
                     <div class="brand_list popular-search desktop_brand_list mt-4">
                         <div class="sidebar_title">
                             <img src="./assets/img/sidebarcaricon.png" alt="">
@@ -385,9 +707,9 @@
                         </ul>
                     </div>
                 </div>
-
                 <!-- all cars  -->
                 <div class="col-md-10 col-lg-10 col-xl-8">
+
                     <!-- hero slider  -->
                     <div class="slider-image">
                         <div class="owl-carousel carousel_block">
@@ -399,6 +721,130 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- mobile brand list start -->
+                    <div class="col-12 left_sidebar">
+                        <div class="desktop_hide">
+                            <div class="heading search-by-make-btn navbar-toggler" data-bs-toggle="collapse"
+                                data-bs-target="#searchbymake" aria-controls="navbarSupportedContent"
+                                aria-expanded="true" aria-label="Toggle navigation">
+                                <div class="car_icon">
+                                    <img src="./assets/img/sidebarcaricon.png" alt="">
+                                </div>
+                                <div class="headring_title ">
+                                    <h4>Search By Make</h4>
+                                </div>
+                            </div>
+                            <ul class="navbar-collapse collapse show" id="searchbymake" style="">
+                                <li>
+                                    <a href="#">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_bmw.webp" class="img-fluid" alt="" />
+                                        </div>
+                                        BMW <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_bmw.webp" class="img-fluid" alt="" />
+                                        </div>
+                                        BMW <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_bmw.webp" class="img-fluid" alt="" />
+                                        </div>
+                                        BMW <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_toyota.png" class="img-fluid" alt="" />
+                                        </div>
+                                        TOYOTA <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_bmw.webp" class="img-fluid" alt="" />
+                                        </div>
+                                        BMW <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_bmw.webp" class="img-fluid" alt="" />
+                                        </div>
+                                        BMW <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_toyota.png" class="img-fluid" alt="" />
+                                        </div>
+                                        TOYOTA <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_bmw.webp" class="img-fluid" alt="" />
+                                        </div>
+                                        BMW <span>(154)</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_bmw.webp" class="img-fluid" alt="" />
+                                        </div>
+                                        BMW <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_toyota.png" class="img-fluid" alt="" />
+                                        </div>
+                                        TOYOTA <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_toyota.png" class="img-fluid" alt="" />
+                                        </div>
+                                        TOYOTA <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_bmw.webp" class="img-fluid" alt="" />
+                                        </div>
+                                        BMW <span>(154)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="brand_logo">
+                                            <img src="assets/img/brand_toyota.png" class="img-fluid" alt="" />
+                                        </div>
+                                        TOYOTA <span>(154)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- mobile brand list end -->
 
                     <!-- search form  -->
                     <div class="row desktop_filter_options">
@@ -643,7 +1089,9 @@
                                 <span>Hot Offers</span>
                             </div>
                         </div>
+                    </div>
 
+                    <div class="row gx-3">
                         <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                             <div class="car_card">
                                 <a href="">
@@ -810,14 +1258,15 @@
                                     </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="row gy-1 d-flex justify-content-center">
-                            <button class="car-paginate-btn">Show More</button>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <hr class="car-section-divider">
                         </div>
                     </div>
+                    <div class="row gy-1 d-flex justify-content-center">
+                        <button class="car-paginate-btn">Show More</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <hr class="car-section-divider">
+                    </div>
+                    
 
                      <!-- New Arrival  -->
                     <div class="row pt-3">
@@ -826,7 +1275,9 @@
                                 <span>New Arrival</span>
                             </div>
                         </div>
-
+                    </div>
+                        
+                    <div class="row gx-3">
                         <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                             <div class="car_card">
                                 <a href="">
@@ -993,146 +1444,135 @@
                                     </div>
                                 </a>
                             </div>
-                        </div>
-                        <div class="row gy-1 d-flex justify-content-center">
-                            <button class="car-paginate-btn">Show More</button>
                         </div>
                     </div>
+                    <div class="row gy-1 d-flex justify-content-center">
+                        <button class="car-paginate-btn">Show More</button>
+                    </div>
+                </div>
                     
-                    <!-- promotional banner  -->
-                    <div class="promotional-banner my-3">
-                        <div class="row">
-                            <div class="col-12">
-                                <img src="./assets/img/banner2.png" class="img-fluid  w-100" alt="">
-                            </div>
+                <!-- promotional banner  -->
+                <div class="promotional-banner my-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="./assets/img/banner2.png" class="img-fluid  w-100" alt="">
                         </div>
+                        
                     </div>
+                </div>
 
 
                     <!-- Popular Request  -->
-                    <div class="row pt-3">
+                     <!--
+                    <div class="row">
                         <div class="col-12">
                             <div class="car_item_heading">
                                 <span>Popular Requests</span>
                                 <p>Next Drive provides to you all the stocks of used Japanese vehicles from Japan.</p>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="popular-car-requests my-3">
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <a href="">
+                                    <div class="popular-car-requests-item">
+                                        <img src="./assets/img/sidebarticksign.png" alt="">
+                                        Car Above 25 years
+                                    </div>
+                                </a>
+                            </div>
 
-                        <div class="popular-car-requests my-3">
-                            <div class="row">
-                                <div class="col-md-4 mb-2">
-                                    <a href="">
-                                        <div class="popular-car-requests-item">
-                                            <img src="./assets/img/sidebarticksign.png" alt="">
-                                            Car Above 25 years
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="col-md-4 mb-2">
+                                <a href="">
+                                    <div class="popular-car-requests-item">
+                                        <img src="./assets/img/sidebarticksign.png" alt="">
+                                        Car Above 25 years
+                                    </div>
+                                </a>
+                            </div>
 
-                                <div class="col-md-4 mb-2">
-                                    <a href="">
-                                        <div class="popular-car-requests-item">
-                                            <img src="./assets/img/sidebarticksign.png" alt="">
-                                            Car Above 25 years
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="col-md-4 mb-2">
+                                <a href="">
+                                    <div class="popular-car-requests-item">
+                                        <img src="./assets/img/sidebarticksign.png" alt="">
+                                        Car Above 25 years
+                                    </div>
+                                </a>
+                            </div>
 
-                                <div class="col-md-4 mb-2">
-                                    <a href="">
-                                        <div class="popular-car-requests-item">
-                                            <img src="./assets/img/sidebarticksign.png" alt="">
-                                            Car Above 25 years
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="col-md-4 mb-2">
+                                <a href="">
+                                    <div class="popular-car-requests-item">
+                                        <img src="./assets/img/sidebarticksign.png" alt="">
+                                        Car Above 25 years
+                                    </div>
+                                </a>
+                            </div>
 
-                                <div class="col-md-4 mb-2">
-                                    <a href="">
-                                        <div class="popular-car-requests-item">
-                                            <img src="./assets/img/sidebarticksign.png" alt="">
-                                            Car Above 25 years
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="col-md-4 mb-2">
+                                <a href="">
+                                    <div class="popular-car-requests-item">
+                                        <img src="./assets/img/sidebarticksign.png" alt="">
+                                        Car Above 25 years
+                                    </div>
+                                </a>
+                            </div>
 
-                                <div class="col-md-4 mb-2">
-                                    <a href="">
-                                        <div class="popular-car-requests-item">
-                                            <img src="./assets/img/sidebarticksign.png" alt="">
-                                            Car Above 25 years
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="col-md-4 mb-2">
-                                    <a href="">
-                                        <div class="popular-car-requests-item">
-                                            <img src="./assets/img/sidebarticksign.png" alt="">
-                                            Car Above 25 years
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="col-md-4 mb-2">
+                                <a href="">
+                                    <div class="popular-car-requests-item">
+                                        <img src="./assets/img/sidebarticksign.png" alt="">
+                                        Car Above 25 years
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </div>   -->
 
                     
                     <!-- Recent Posts  -->
-                    <div class="row pt-3">
-                        <div class="col-12">
-                            <div class="car_item_heading">
-                                <span>Recent Posts</span>
+                    <div class="col-12">
+                    <div class="popular_request recent_post">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="cars_list_title">
+                                    <img src="assets/img/Vector (1).png" class="img-fluid" alt="" />
+                                    <h2>Recent Posts</h2>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="recent_post">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="post_items">
-                                        <img src="./assets/img/blog1.png" class="img-fluid w-100" alt="" />
-                                        <h3>
-                                            Top 20 Japanese Muscle Cars: Speed, Style, and Performance
-                                        </h3>
-                                        <a href="">See More</a>
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="post_items">
+                                    <img src="assets/img/blog1.png" class="img-fluid w-100" alt="" />
+                                    <h3>
+                                        Top 20 Japanese Muscle Cars: Speed, Style, and Performance
+                                    </h3>
+                                    <button>See More</button>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="post_items">
-                                        <img src="./assets/img/blog1.png" class="img-fluid w-100" alt="" />
-                                        <h3>
-                                            Top 20 Japanese Muscle Cars: Speed, Style, and Performance
-                                        </h3>
-                                        <a href="">See More</a>
-                                    </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="post_items">
+                                    <img src="assets/img/blog2.png" class="img-fluid w-100" alt="" />
+                                    <h3>
+                                        Top 20 Japanese Muscle Cars: Speed, Style, and Performance
+                                    </h3>
+                                    <button>See More</button>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="post_items">
-                                        <img src="./assets/img/blog1.png" class="img-fluid w-100" alt="" />
-                                        <h3>
-                                            Top 20 Japanese Muscle Cars: Speed, Style, and Performance
-                                        </h3>
-                                        <a href="">See More</a>
-                                    </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="post_items">
+                                    <img src="assets/img/blog3.png" class="img-fluid w-100" alt="" />
+                                    <h3>
+                                        Top 20 Japanese Muscle Cars: Speed, Style, and Performance
+                                    </h3>
+                                    <button>See More</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- newsletter -->
-                    <section class="row pt-3">
-                        <div class="col-12">
-                            <div class="newsletter-section">
-                                <p>Instant US$100 discount!</p>
-                                <h3>Subscribe to our newsletter</h3>
-                                <form action="">
-                                    <input type="email" id="newsletterEmail" placeholder="Your email address">
-                                    <button>Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
-
                 </div>
 
                 <!-- ad image  -->
@@ -1179,7 +1619,28 @@
         </div>
     </section>
 
-    <footer class="mt-5">
+    <!-- signup and footer part -->
+
+    <div class="signup_section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-5">
+                    <img src="assets/img/signup.png" class="img-fluid w-100" alt="" />
+                </div>
+                <div class="col-lg-4 col-md-7 col-12">
+                    <label for="">Instant US$100 discount!</label>
+                    <form action="">
+                        <input type="email" class="form-control" placeholder="Your Email Address" />
+                        <input type="submit" class="form-control" value="Subscribe" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- signup and footer part -->
+
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-6 flex">
