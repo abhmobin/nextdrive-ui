@@ -826,6 +826,17 @@ label[data-color="black m"] {
     margin-bottom: 16px;
 }
 
+.ad_image img {
+    border-radius: 20px;
+}
+
+.floating-wp {
+    position: fixed;
+    right: 15%;
+    bottom: 25%;
+    z-index: 10;
+}
+
 .signup_section {
     background: linear-gradient(270deg, rgb(232, 44, 45), rgb(232, 44, 45), rgb(203, 10, 7), rgb(203, 10, 7));
     padding: 30px 0px;
