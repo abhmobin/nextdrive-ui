@@ -140,17 +140,17 @@ header .nav-link {
 }
 
 header .nav-link:hover {
-    color: rgb(203, 10, 7);
+    color: var(--dark-red);
 }
 
 header .nav-link::after {
     content: "";
     position: absolute;
-    bottom: -24px;
+    bottom: -10px;
     left: 0px;
     height: 3px;
     width: 0%;
-    background-color: rgb(203, 10, 7);
+    background-color: var(--dark-red);
     z-index: 1;
 }
 
@@ -992,11 +992,11 @@ footer a {
 }
 
 .mobile_nav .navbar-nav li a i {
-    color: rgb(157, 157, 157);
+    color: var(--dark-red);
 }
 
 .mobile_nav li a:hover {
-    color: rgb(203, 10, 7) !important;
+    color: var(--dark-red);
 }
 
 .mobile_nav .nav-link:hover::after {
