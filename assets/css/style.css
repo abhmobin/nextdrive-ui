@@ -3378,3 +3378,70 @@ button.navbar-toggler:focus {
 .car_list:hover h3 {
     color: rgba(203, 10, 7, 1);
 }
+
+/* search page */
+.car-search-summary{
+    font-size: 14px;
+}
+
+.car-search-summary .sorting strong {
+    color: var(--dark-red)
+}
+
+.car-search-summary .sorting {
+    background-color: #F4F4F4;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.car-search-summary .sorting select {
+    border: none;
+    background-color: transparent;
+}
+
+.search-car-card img {
+    margin-right: 10px;
+    width: 155px;
+    border-radius: 20px;
+}
+
+.search-car-card .car-details h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #351616;
+    text-transform: uppercase;
+}
+
+.search-car-card .car-spec{
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8D92;
+    background-color: var(--light-red);
+    border-radius: 10px;
+}
+
+.search-car-card .car-spec span{
+    padding: 3px 6px;
+}
+
+.search-car-card .car-spec i{
+    height: 12px;
+    border: 1px solid #FFFFFF;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.search-car-card .car-details p {
+    color: var(--dark-red);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.search-car-card .car-details button {
+    color: var(--dark-red);
+    border: 1px solid var(--dark-red);
+    background-color: var(--light-red);
+    border-radius: 20px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
