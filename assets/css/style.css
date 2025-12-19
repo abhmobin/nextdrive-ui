@@ -1226,10 +1226,13 @@ button.navbar-toggler:focus {
 
 .search-form form label {
     font-size: 12px;
+    font-weight: 500;
 }
 .search-form .form-select {
     border-radius: 30px;
     font-size: 12px;
+    padding: .375rem .25rem .35rem .375rem
+
 }
 
 .search-form .form-select option{
