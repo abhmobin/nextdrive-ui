@@ -3482,3 +3482,66 @@ button.navbar-toggler:focus {
     padding-top: 10px;
     color: #fff;
 }
+
+/* car details page */
+.car-thumb-details .car-title h2{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.car-thumb-details .car-title p {
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8D92;
+}
+
+.car-thumb-details .car-title p .divider {
+    height: 12px;
+    border: 1px solid #E2E2E2;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.car-thumb-details .price {
+    padding: 10px 30px;
+    background-color: #F8F8F8;
+    border-radius: 30px;
+    vertical-align: middle;
+}
+
+.car-thumb-details .price h2 {
+    margin-right: 15px;
+    font-weight: 500;
+    color: var(--dark-red);
+    font-size: 18px;
+
+}
+
+.car-thumb-details .price button {
+    border: none;
+    background-color: var(--dark-red);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.1s ease-in all;
+}
+
+.car-thumb-details .price button:hover {
+    border: 1px solid var(--dark-red);
+    background-color: var(--light-red);
+    color: var(--dark-red);
+}
+
+
+.car-thumb-details .car-galleries img{
+    border-radius: 20px;
+}
+
+.car-thumb-details .car-galleries .small-img img{
+    padding: 5px
+}

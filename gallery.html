@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Gallery</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    .small-thumb {
+        height: 100px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .gallery-more-box {
+        background: rgba(0,0,0,0.7);
+        height: 100px;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .modal-large-img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+    .thumb-strip {
+        width: 60px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 0 0 auto;
+    }
+
+    .thumb-active {
+        outline: 3px solid #ff0000;
+    }
+
+    /* Optional: highlight selected */
+.thumb-strip:active,
+.thumb-strip:focus,
+.thumb-strip:hover {
+    outline: 2px solid red;
+}
+
+.modal-dialog {
+    max-height: 85vh;
+}
+
+.modal-large-img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.thumb-scroll-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.thumb-strip {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 0 0 auto;
+}
+
+/* ARROWS */
+.modal-arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 50;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 40px;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.modal-arrow:hover {
+    background: rgba(0,0,0,0.85);
+}
+</style>
+</head>
+<body>
+
+<div class="container py-4">
+
+    <!-- Title Row -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="fw-bold">TOYOTA C-HR</h4>
+        <h4 class="text-danger fw-bold">USD 16,817</h4>
+    </div>
+
+    <div class="row g-3">
+
+        <!-- LEFT BIG IMAGE -->
+        <div class="col-lg-8">
+            <div class="border p-2 rounded">
+                <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid w-100 rounded" id="mainImage">
+            </div>
+        </div>
+
+        <!-- RIGHT SMALL IMAGES -->
+        <div class="col-lg-4">
+            <div class="row g-2">
+
+                <!-- Small images -->
+                <div class="col-4" onclick="changeImage(this)">
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=1" class="img-fluid small-thumb">
+                </div>
+
+                <div class="col-4" onclick="changeImage(this)">
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=2" class="img-fluid small-thumb">
+                </div>
+
+                <div class="col-4" onclick="changeImage(this)">
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=3" class="img-fluid small-thumb">
+                </div>
+
+                <div class="col-4" onclick="changeImage(this)">
+                    <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg?text=4" class="img-fluid small-thumb">
+                </div>
+
+                <div class="col-4" onclick="changeImage(this)">
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=5" class="img-fluid small-thumb">
+                </div>
+
+                <div class="col-4" onclick="changeImage(this)">
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=6" class="img-fluid small-thumb">
+                </div>
+
+                <div class="col-4" onclick="changeImage(this)">
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=7" class="img-fluid small-thumb">
+                </div>
+
+                <div class="col-4" onclick="changeImage(this)">
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=8" class="img-fluid small-thumb">
+                </div>
+
+                <!-- LAST BOX (10+) -->
+                <div class="col-4">
+                    <div class="gallery-more-box d-flex justify-content-center align-items-center text-white fw-bold"
+                        data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        10+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- 🔥 FULLSCREEN GALLERY MODAL -->
+<div class="modal fade" id="galleryModal" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="fw-bold">TOYOTA C-HR Images</h5>
+                <div>
+                    <button class="btn btn-outline-danger btn-sm me-2">Download All (36)</button>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body position-relative">
+
+
+                <!-- LEFT ARROW -->
+                <button class="modal-arrow left-arrow" onclick="prevImage()">
+                    &#10094;
+                </button>
+
+                <!-- RIGHT ARROW -->
+                <button class="modal-arrow right-arrow" onclick="nextImage()">
+                    &#10095;
+                </button>
+
+                <!-- Main Large Modal Image -->
+                <div class="text-center mb-3">
+                    <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid rounded modal-large-img"
+                         id="modalMainImage">
+                </div>
+
+                <!-- Thumbnails -->
+                <div id="modalThumbContainer" class="d-flex flex-wrap gap-2 justify-content-center thumb-scroll-container">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=A" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=B" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=D" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=E" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=F" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=A" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=B" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=D" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=E" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=F" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+                         <img src="./assets/img/NISSANDUALIS 20S.png?text=E" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=F" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=A" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=B" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=D" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=E" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    <img src="./assets/img/NISSANDUALIS 20S.png?text=F" class="thumb-strip"
+                         onclick="document.getElementById('modalMainImage').src=this.src">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Change big image on small thumbnail click
+    function changeImage(el) {
+        const newSrc = el.querySelector("img").src;
+        document.getElementById("mainImage").src = newSrc;
+
+        // remove highlight
+        document.querySelectorAll(".small-thumb").forEach(img => img.classList.remove("thumb-active"));
+
+        // highlight current
+        el.querySelector("img").classList.add("thumb-active");
+    }
+</script>
+
+<script>
+let modalImages = [];
+let modalIndex = 0;
+
+function updateModalImage() {
+    document.getElementById("modalMainImage").src = modalImages[modalIndex].src;
+}
+
+// LOAD IMAGES WHEN MODAL OPENS
+document.getElementById('galleryModal').addEventListener('shown.bs.modal', function () {
+
+    // load all thumbnails
+    modalImages = Array.from(document.querySelectorAll("#modalThumbContainer img"));
+
+    // click event for thumbnails
+    modalImages.forEach((img, index) => {
+        img.addEventListener("click", () => {
+            modalIndex = index;
+            updateModalImage();
+        });
+    });
+
+    // set first image by default
+    modalIndex = 0;
+    updateModalImage();
+});
+
+// NEXT IMAGE
+function nextImage() {
+    modalIndex = (modalIndex + 1) % modalImages.length;
+    updateModalImage();
+}
+
+// PREVIOUS IMAGE
+function prevImage() {
+    modalIndex = (modalIndex - 1 + modalImages.length) % modalImages.length;
+    updateModalImage();
+}
+</script>
+
+
+</body>
+</html>
