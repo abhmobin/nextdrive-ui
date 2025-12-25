@@ -1397,10 +1397,6 @@ button.navbar-toggler:focus {
     width: 100%;
 }
 
-.modal-dialog {
-    max-width: 650px;
-}
-
 .asking_price .modal-header {
     background-color: rgb(203, 10, 7);
     padding: 10px 0px;
@@ -3544,4 +3540,172 @@ button.navbar-toggler:focus {
 
 .car-thumb-details .car-galleries .small-img img{
     padding: 5px
+}
+
+
+/* gallery */
+.small-thumb {
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.gallery-more-box {
+    background: rgba(0,0,0,0.7);
+    height: 100px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.countedImg {
+    position: relative;
+    z-index: 0;
+}
+
+.countedBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: opacity(0.1);
+}
+
+
+.modal-large-img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.thumb-strip {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 0 0 auto;
+}
+
+.thumb-active {
+    outline: 3px solid #ff0000;
+}
+
+    /* Optional: highlight selected */
+.thumb-strip:active,
+.thumb-strip:focus,
+.thumb-strip:hover {
+    outline: 2px solid red;
+}
+
+.modal-large-img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.thumb-scroll-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.thumb-strip {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 0 0 auto;
+}
+.gallery-more-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-more-img {
+    width: 100%;
+    height: 100px;     /* same as other thumbnails */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* dark overlay */
+.gallery-more-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ARROWS */
+.modal-arrow {
+    position: absolute;
+    top: 30%;
+    z-index: 50;
+    background: var(--light-red);
+    color: #fff;
+    font-size: 30px;
+    border: 1px solid var(--dark-red);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s ease all;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.modal-arrow:hover {
+    background: var(--dark-red);
+}
+
+.modal-arrow:hover svg path {
+    stroke: white
+}
+
+.car-full-details .details{
+    background-color: #F8F8F8;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.car-full-details .details .info{
+    background-color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    border: 20px;
+}
+
+.car-full-details h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.car-full-details h6 {
+    font-size: 12px;
+    color: #8E8D92;
+}
+
+.car-full-details .data {
+    font-weight: 500;
+    color: #292826;
 }

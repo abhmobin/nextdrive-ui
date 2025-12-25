@@ -9,17 +9,12 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- jquery ui css -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- owl carousel css  -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
     <!-- custom css  -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/media.css" />
+    <!-- <link rel="stylesheet" href="assets/css/media.css" /> -->
 </head>
 
 <body>
@@ -405,36 +400,115 @@
                             </div>
                         </section>
 
-                        <section class="car-galleries my-3">
-                            <div class="row">
-                                <div class="col-md-7 col-12 big-img py-1">
-                                    <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid w-100" alt="">
-                                </div>
-                                 <div class="col-md-5 col-12 small-img">
-                                    <div class="row gx-0">
-                                        <div class="col-md-6 col-12">
-                                            <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid w-100" alt="">
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid w-100" alt="">
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid w-100" alt="">
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid w-100" alt="">
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid w-100" alt="">
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid w-100" alt="">
+                        <div class="row car-galleries my-3">
+                            <!-- LEFT BIG IMAGE -->
+                            <div class="col-md-8 col-sm-12">
+                                <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid w-100" id="mainImage">
+                            </div>
+
+                            <!-- RIGHT SMALL IMAGES -->
+                            <div class="col-md-4 col-sm-12">
+                                <div class="row g-0">
+                                    <!-- Small images -->
+                                    <div class="col-6 pb-2 pe-1" onclick="changeImage(this)">
+                                        <img src="./assets/img/NISSANDUALIS 20S.png?text=1" class="img-fluid small-thumb">
+                                    </div>
+
+                                    <div class="col-6 pb-2 ps-1" onclick="changeImage(this)">
+                                        <img src="./assets/img/NISSANDUALIS 20S.png?text=2" class="img-fluid small-thumb">
+                                    </div>
+
+                                    <div class="col-6 pb-2 pe-1" onclick="changeImage(this)">
+                                        <img src="./assets/img/NISSANDUALIS 20S.png?text=3" class="img-fluid small-thumb">
+                                    </div>
+
+                                    <div class="col-6 pb-2 ps-1" onclick="changeImage(this)">
+                                        <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg?text=4" class="img-fluid small-thumb">
+                                    </div>
+
+                                    <div class="col-6 pb-2 pe-1" onclick="changeImage(this)">
+                                        <img src="./assets/img/NISSANDUALIS 20S.png?text=5" class="img-fluid small-thumb">
+                                    </div>
+
+                                    <div class="col-6 pb-2 ps-1" onclick="changeImage(this)">
+                                        <img src="./assets/img/NISSANDUALIS 20S.png?text=6" class="img-fluid small-thumb">
+                                    </div>
+
+                                    <div class="col-6 pe-1" onclick="changeImage(this)">
+                                        <img src="./assets/img/NISSANDUALIS 20S.png?text=7" class="img-fluid small-thumb">
+                                    </div>
+
+                                    <div class="col-6 ps-1" onclick="changeImage(this)">
+                                        <div class="gallery-more-wrapper" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                                            <img src="./assets/img/NISSANDUALIS 20S.png?text=More" class="gallery-more-img">
+                                            <div class="gallery-more-overlay">
+                                                <span>10+</span>
+                                            </div>
                                         </div>
                                     </div>
-                                 </div>
+                                </div>
                             </div>
-                        </section>
+                        </div>
+                        <hr>
+                    </section>
 
+
+                    <section class="container car-full-details mt-3">
+                        <div class="row">
+                            <div class="col-md-7 col-12">
+                                <h3>Car Details</h3>
+                                <div class="details">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="info py-4">
+                                                <img src="./assets/img/refid.png" alt="">
+                                                <h6 class="my-1">Reference ID</h6>
+                                                <h6 class="data">7823422</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="info py-4">
+                                                <img src="./assets/img/refid.png" alt="">
+                                                <h6 class="my-1">Reference ID</h6>
+                                                <h6 class="data">7823422</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="info py-4">
+                                                <img src="./assets/img/refid.png" alt="">
+                                                <h6 class="my-1">Reference ID</h6>
+                                                <h6 class="data">7823422</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="info py-4">
+                                                <img src="./assets/img/refid.png" alt="">
+                                                <h6 class="my-1">Reference ID</h6>
+                                                <h6 class="data">7823422</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="info py-4">
+                                                <img src="./assets/img/refid.png" alt="">
+                                                <h6 class="my-1">Reference ID</h6>
+                                                <h6 class="data">7823422</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="info py-4">
+                                                <img src="./assets/img/refid.png" alt="">
+                                                <h6 class="my-1">Reference ID</h6>
+                                                <h6 class="data">7823422</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5 col-12">
+                                <div class="details"></div>
+                            </div>
+                        </div>
                     </section>
 
                     <!-- newsletter -->
@@ -608,20 +682,167 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/d2d598fe43.js" crossorigin="anonymous"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
 
-    <!-- Select2 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <!-- Select2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/acco.js"></script>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header d-flex justify-content-between">
+                    <h5 class="fw-bold">TOYOTA C-HR Images</h5>
+                    <div>
+                        <button class="btn btn-outline-danger btn-sm me-2">Download All (36)</button>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body position-relative">
+                    <!-- LEFT ARROW -->
+                    <button class="modal-arrow left-arrow" onclick="prevImage()">
+                        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.23167 11.06L0.885 6.71333C0.371667 6.2 0.371667 5.36 0.885 4.84667L5.23167 0.5" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </button>
+
+                    <!-- RIGHT ARROW -->
+                    <button class="modal-arrow right-arrow" onclick="nextImage()">
+                        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.5 11.06L4.84667 6.71333C5.36 6.2 5.36 5.36 4.84667 4.84667L0.5 0.5" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </button>
+
+                    <!-- Main Large Modal Image -->
+                    <div class="text-center mb-3">
+                        <img src="./assets/img/NISSANDUALIS 20S.png" class="img-fluid rounded modal-large-img"
+                            id="modalMainImage">
+                    </div>
+
+                    <!-- Thumbnails -->
+                    <div id="modalThumbContainer" class="d-flex flex-wrap gap-2 justify-content-center thumb-scroll-container">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=A" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=B" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=D" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=E" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=F" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=A" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=B" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=D" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=E" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=F" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+                            <img src="./assets/img/NISSANDUALIS 20S.png?text=E" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=F" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=A" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=B" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=D" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=E" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                        <img src="./assets/img/NISSANDUALIS 20S.png?text=F" class="thumb-strip"
+                            onclick="document.getElementById('modalMainImage').src=this.src">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+    // Change big image on small thumbnail click
+    function changeImage(el) {
+        const newSrc = el.querySelector("img").src;
+        document.getElementById("mainImage").src = newSrc;
+
+        // remove highlight
+        document.querySelectorAll(".small-thumb").forEach(img => img.classList.remove("thumb-active"));
+
+        // highlight current
+        el.querySelector("img").classList.add("thumb-active");
+    }
+</script>
+
+<script>
+    let modalImages = [];
+    let modalIndex = 0;
+
+    function updateModalImage() {
+        document.getElementById("modalMainImage").src = modalImages[modalIndex].src;
+    }
+
+    // LOAD IMAGES WHEN MODAL OPENS
+    document.getElementById('galleryModal').addEventListener('shown.bs.modal', function () {
+
+        // load all thumbnails
+        modalImages = Array.from(document.querySelectorAll("#modalThumbContainer img"));
+
+        // click event for thumbnails
+        modalImages.forEach((img, index) => {
+            img.addEventListener("click", () => {
+                modalIndex = index;
+                updateModalImage();
+            });
+        });
+
+        // set first image by default
+        modalIndex = 0;
+        updateModalImage();
+    });
+
+    // NEXT IMAGE
+    function nextImage() {
+        modalIndex = (modalIndex + 1) % modalImages.length;
+        updateModalImage();
+    }
+
+    // PREVIOUS IMAGE
+    function prevImage() {
+        modalIndex = (modalIndex - 1 + modalImages.length) % modalImages.length;
+        updateModalImage();
+    }
+    </script>
 
 </body>
 
