@@ -3709,3 +3709,76 @@ button.navbar-toggler:focus {
     font-weight: 500;
     color: #292826;
 }
+
+.car-full-details .details form label[for=name],
+.car-full-details .details form label[for=country],
+.car-full-details .details form label[for=tell],
+.car-full-details .details form label[for=comment] {
+    display: block;
+    color: #623030;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.car-full-details .details form input[type=text],
+.car-full-details .details form select,
+.car-full-details .details form textarea {
+    color: #727489;
+    font-size: 12px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 14px;
+    border: 1px solid #D7D7D7;
+}
+
+.car-full-details .details form .form-check-label {
+    color: #727489;
+    font-size: 12px;
+}
+
+.car-full-details .details form .form-check-input:checked {
+    background-color: #000;
+    border-color: #000;
+}
+
+.car-full-details .details form button[type=submit] {
+    background-color: var(--dark-red);
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid var(--dark-red);
+    font-weight: 500;
+    font-size: 12px;
+    padding: 6px 8px;
+}
+
+.car-specifications h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #292826;
+}
+
+.car-specifications .spec-item {
+    background-color: #F8F8F8;
+    color: #8E8D92;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid #F8F8F8;
+    border-radius: 30px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+}
+
+.car-specifications .spec-item svg path {
+    fill: #E9E9E9;
+}
+
+.car-specifications .spec-item.active {
+    background-color: var(--light-red);
+    color: #351616;
+    border: 1px solid var(--dark-red);
+}
+
+.car-specifications .spec-item.active svg path {
+    fill: #0DBD94;
+}
