@@ -3888,3 +3888,167 @@ button.navbar-toggler:focus {
     }
 }
 
+/* pages */
+.page-breadcrumb {
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10vh;
+    border-radius: 20px;
+    padding: 30px;
+    color: var(--dark-red);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.page-subtext {
+    font-size: 14px;
+    color: #7B7A80;
+}
+
+.company-targets h3,
+.team-section h3,
+.bank-details h3,
+.memories h3,
+.company-targets li strong {
+    color: #623030;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.company-targets p {
+    font-size: 14px;
+    color: #7B7A80;
+    margin-top: 10px;
+}
+
+.company-targets ul {
+    list-style: none;
+}
+
+.company-targets li {
+    font-size: 14px;
+    font-weight: normal;
+    color: #7B7A80;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.company-targets .final-words {
+    font-size: 16px;
+}
+
+.teams .team-member img {
+    border-radius: 30px;
+}
+.teams .team-member .designation,
+.teams .team-member .quote {
+    font-size: 14px;
+    color: #7B7A80;
+    line-height: 1.5;
+}
+
+.teams .all-staffs h4 {
+    color: #623030;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.bank-details .bank-infos {
+    background-color: #F8F8F8;
+    border-radius: 20px;
+}
+
+.bank-details .bank-infos table {
+    font-size: 14px;
+    font-weight: 600;
+}
+.bank-details .bank-infos table tr {
+    border-bottom: 1px solid #fff;
+}
+.bank-details .bank-infos table tr:last-child {
+    border: none;
+}
+.bank-details .bank-infos table th {
+    color: #7B7A80;
+    padding: 10px 10px;
+}
+
+.bank-details .bank-infos table td {
+    color: #623030;
+}
+
+.memories img {
+    border-radius: 15px;
+}
+
+.aboutus-contact-details section {
+    background-color: #F8F8F8;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+.aboutus-contact-details .liner{
+    height: 1px;
+    width: 65%;
+    background-color: #E6E6E6;
+    margin: 10px auto;
+}
+.aboutus-contact-details .contact-info h3,
+.aboutus-contact-details .contact-info p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.aboutus-contact-details .info {
+    margin-left: 20px;
+
+}
+
+.aboutus-contact-details .info h3{
+    color: #7B7A80;
+}
+
+.aboutus-contact-details .info p,
+.aboutus-contact-details .info a{
+    text-decoration: none;
+    color: #623030;
+}
+
+.aboutus-contact-details .form h3 {
+    color: #292826;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.aboutus-contact-details .form .input-group-text{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.aboutus-contact-details .form input,
+.aboutus-contact-details .form select {
+    border-radius: 30px;
+    border-left: none;
+    padding-left: 0;
+    color: #727489;
+    font-size: 14px;
+}
+
+.aboutus-contact-details .form textarea {
+    border-radius: 20px;
+}
+
+.aboutus-contact-details .form button {
+    background-color: var(--dark-red);
+    border: 1px solid var(--dark-red);
+    color: #fff;
+    transition: 0.2s ease all;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
