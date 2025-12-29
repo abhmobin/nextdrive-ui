@@ -3480,38 +3480,38 @@ button.navbar-toggler:focus {
     font-weight: 500;
 }
 
-.car-list-pagination .pagination span{
+.list-pagination .pagination span{
     margin-left: 15px;
     font-size: 12px;
     font-weight: 500;
 }
 
-.car-list-pagination .pagination .page-mid{
+.list-pagination .pagination .page-mid{
     margin-top: -2px;
     font-weight: 700;
 }
 
-.car-list-pagination .pagination a {
+.list-pagination .pagination a {
     text-decoration: none;
     color: #000;
 }
 
-.car-list-pagination .pagination a:hover{
+.list-pagination .pagination a:hover{
     color: var(--dark-red);
 }
 
-.car-list-pagination .pagination a:hover svg path{
+.list-pagination .pagination a:hover svg path{
     stroke:var(--dark-red)
 }
 
-.car-list-pagination .pagination .active-page{
+.list-pagination .pagination .active-page{
     background-color: var(--dark-red);
     height: 20px;
     width: 20px;
     border-radius: 50%;
 }
 
-.car-list-pagination .pagination .active-page a{
+.list-pagination .pagination .active-page a{
     padding: 7px;
     padding-top: 10px;
     color: #fff;
@@ -4160,4 +4160,25 @@ button.navbar-toggler:focus {
     .opening-grid::before {
         display: none;
     }
+}
+
+
+.blog-categories ul {
+    list-style: none;
+}
+
+.blog-categories ul li{
+    display: inline;
+    padding-right: 10px;
+}
+
+.blog-categories ul button{
+    border: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-red);
+    border: 1px solid var(--dark-red);
+    background-color: var(--light-red);
 }
