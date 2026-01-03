@@ -3385,6 +3385,10 @@ button.navbar-toggler:focus {
     border-radius: 50%;
 }
 
+.country-section .sec-title svg {
+    margin-left: 8px;
+}
+
 .country-section .countries {
     background-color: #F8F8F8;
     padding: 8px 10px;
