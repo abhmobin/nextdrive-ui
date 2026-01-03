@@ -633,10 +633,80 @@
                                             <span>Pearl</span>
                                         </div>
                                         <p class="my-1">USD 2312</p>
-                                        <button>Ask for The Best Price</button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#askForBestPriceModal">Ask for The Best Price 1</button>
                                     </div>
                                 </div>
                             </div>
+
+<!-- Modal -->
+<div class="modal fade custom-modal" id="askForBestPriceModal" tabindex="-1" aria-labelledby="askForBestPriceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="askForBestPriceModalLabel">For Your Best Price</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="">
+            <div class="modal-body">
+                <div class="d-flex justify-content-between">
+                  <div class="thumb-img me-2">
+                    <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" alt="">
+                  </div>
+                  <div class="modal-car-details">
+                    <h1>TOYOTA LAND CRUISER PRADO</h1>
+                    <div class="my-2 px-1">
+                      <p class="modal-car-spec">
+                          <span>Auto</span> <i class="v-line"></i>
+                          <span>77000 km</span> <i class="v-line"></i>
+                          <span>2024</span> <i class="v-line"></i>
+                          <span>Pearl</span> <i class="v-line"></i>
+                          <span>1800 CC</span>
+                        </p>
+                        <h2 class="my-2">USD 16,817</h2>
+                        <p class="modal-car-country-price">
+                          <span>Price : 16,817</span> <i class="v-line"></i>
+                          <span>Cost : 100</span> <i class="v-line"></i>
+                          <span>Total : 16,917</span>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+
+                <div class="form-group mb-1">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                </div>
+                <div class="form-group mb-1">
+                    <label for="country">Country*</label>
+                    <select name="" id="country" class="form-select">
+                        <option selected disabled>Select Country</option>
+                    </select>
+                </div>
+                <div class="form-group mb-1">
+                    <label for="phone">Tell (Whatsapp)*</label>
+                    <input type="text" class="form-control" placeholder="Enter your phone number"id="phone">
+                </div>
+                <div class="form-group mb-1">
+                    <label for="comment">Comment*</label>
+                    <textarea name="" id="comment" class="form-control" placeholder="Write here" rows="3"></textarea>
+                </div>
+      
+                
+              </div>
+              <div class="modal-footer d-flex justify-content-between">
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="1" id="inquiry-check" checked>
+                    <label class="form-check-label" for="inquiry-check">
+                        Subscribe newsletter for discount
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+              </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
                             <div class="col-md-6 col-sm-12 mb-3">
                                 <div class="search-car-card d-flex">
