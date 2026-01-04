@@ -46,7 +46,7 @@
                     <div class="col-md-6">
                         <ul class="right_nav_items">
                             <li>
-                                September 04, 02:36 (JST) TTB 1 USD = 145.00 Yen
+                                Sept 04, 02:36 (JST) TTB 1 USD = 145.00 Yen
                             </li>
                             <li class="currency">
                                 <select name="" id="">
@@ -54,8 +54,8 @@
                                     <option value="">USD</option>
                                 </select>
                             </li>
-                            <li class="mobile_none laptop-hide">
-                                <button class="customer-login-btn">Customer Login</button>
+                            <li>
+                                <a href="" class="customer-login-btn"><span class="mobile_none">Customer </span>Login</a>
                             </li>
                         </ul>
                     </div>
@@ -67,22 +67,20 @@
             <div class="main_navbar">
                 <div class="row">
                     <!-- desktop header  -->
-                    <nav class="navbar navbar-expand-md header_mobile_none">
+                    <nav class="navbar navbar-expand-md main_header">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"><img src="assets/img/top-logo.png" class="img-fluid"
                                     alt="" /></a>
 
-                            <form action="" class="search_by_kw">
+                            <form action="" class="search_by_kw mobile_none">
                                 <input type="text" class="form-control" placeholder="Search By Car.." />
                                 <button type="submit">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                     Search
                                 </button>
                             </form>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                            <button class="toggler-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <img src="./assets/img/toggler-icon.png" alt="">
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -397,6 +395,19 @@
                                 <img src="./assets/img/banner1.png" class="img-fluid" alt="">
                             </div>
                         </div>
+                    </div>
+
+                    <div class="mobile_search_form mt-2 d-flex justify-content-between d-sm-none">
+                        <form action="" class="search_by_kw">
+                            <input type="text" class="form-control" placeholder="Search By Car.." />
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                Search
+                            </button>
+                        </form>
+                        <button class="mobile-filter-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Filter
+                        </button>
                     </div>
 
                     <!-- search form  -->
@@ -1090,7 +1101,7 @@
 
                         <div class="recent_post">
                             <div class="row">
-                                <div class="col-md-4 col-sm-6">
+                                <div class="col-md-4 col-6">
                                     <div class="post_items">
                                         <img src="./assets/img/blog1.png" class="img-fluid w-100" alt="" />
                                         <h3>
@@ -1099,7 +1110,7 @@
                                         <a href="">See More</a>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
+                                <div class="col-md-4 col-6">
                                     <div class="post_items">
                                         <img src="./assets/img/blog1.png" class="img-fluid w-100" alt="" />
                                         <h3>
@@ -1108,7 +1119,7 @@
                                         <a href="">See More</a>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
+                                <div class="col-md-4 col-6">
                                     <div class="post_items">
                                         <img src="./assets/img/blog1.png" class="img-fluid w-100" alt="" />
                                         <h3>
@@ -1342,6 +1353,30 @@
             </div>
         </div>
     </footer>
+
+
+<!-- mobile left menu - offside canvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>

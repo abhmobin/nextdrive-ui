@@ -130,6 +130,9 @@ header .nav-item {
     margin-right: 30px;
 }
 
+.toggler-btn {
+    display: none;
+}
 header .nav-link {
     color: rgb(0, 0, 0);
     font-size: 12px;
@@ -2772,7 +2775,7 @@ button.navbar-toggler:focus {
     width: 20%;
 }
 
-.header_mobile_none .collapse.navbar-collapse {
+.main_header .collapse.navbar-collapse {
     flex-grow: inherit;
     flex-basis: inherit;
 }
@@ -3159,10 +3162,10 @@ button.navbar-toggler:focus {
 }
 
 .car-paginate-btn:hover {
-    color: var(--light-red);
-    border-color: var(--light-red);
+    color: var(--dark-red);
+    border-color: #CB0A07;
     border-radius: 30px;
-    background-color: var(--dark-red);
+    background-color: #FFD8DA;
 }
 
 .car-section-divider {
@@ -4311,4 +4314,24 @@ button.navbar-toggler:focus {
 .custom-modal form button:hover {
     background-color: transparent;
     color: var(--dark-red);
+}
+
+.toggler-btn {
+    border: none;
+    background-color: transparent;
+    padding-right: 5px;
+}
+
+.mobile_search_form {
+    display: none;
+}
+
+.mobile_search_form .mobile-filter-btn {
+    background-color: transparent;
+    border: 1px solid var(--dark-red);
+    border-radius: 20px;
+    color: var(--dark-red);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
 }
