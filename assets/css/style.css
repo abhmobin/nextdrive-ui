@@ -169,7 +169,7 @@ header .nav-link:hover::after {
     min-height: 75vh;
 }
 
-.carousel_block .owl-dots {
+.hero_carousel .owl-dots {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +184,7 @@ header .nav-link:hover::after {
     position: relative;
 }
 
-.carousel_block .owl-dot span {
+.hero_carousel .owl-dot span {
     display: block;
     height: 7px;
     width: 15px;
@@ -192,7 +192,7 @@ header .nav-link:hover::after {
     margin: 4px;
 }
 
-.carousel_block .owl-dot.active span {
+.hero_carousel .owl-dot.active span {
     display: block;
     background-color: rgb(188, 13, 26);
     height: 8px;
@@ -4334,4 +4334,12 @@ button.navbar-toggler:focus {
     font-size: 12px;
     font-weight: 600;
     padding: 5px 12px;
+}
+
+.mobile_recent_blogs {
+    display: none;
+}
+
+.mobile_footer {
+    display: none
 }

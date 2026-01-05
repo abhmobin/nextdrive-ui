@@ -1,7 +1,16 @@
 $(document).ready(function(){
-  $(".carousel_block").owlCarousel({
+  $(".hero_carousel").owlCarousel({
     items: 1,
     dots: true,
+    smartSpeed: 1500,
+    loop: true,
+  });
+});
+
+$(document).ready(function(){
+  $(".blogs_carousel").owlCarousel({
+    items: 2,
+    dots: false,
     smartSpeed: 1500,
     loop: true,
   });

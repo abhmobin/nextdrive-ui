@@ -1262,5 +1262,16 @@
         margin-left: 10px;
         font-size: 12px;
     }
-
+    .mobile_recent_blogs {
+        display: block;
+    }
+    .right_aside {
+        display: none;
+    }
+    footer {
+        padding: 20px 0px 0px;
+    }
+    .mobile_footer {
+        display: block
+    }
 }
