@@ -1225,6 +1225,9 @@
         display: flex;
         justify-content: space-between;
     }
+    .teams .our_ceo{
+        display: block;
+    }
 }
 
 @media(max-width: 430px) {
