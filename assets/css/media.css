@@ -30,6 +30,10 @@
         display: none;
     }
 
+    .right_aside {
+        display: none !important;
+    }
+
     .top_bar {
         padding: 10px 0px;
     }
@@ -495,7 +499,7 @@
         color: #000;
         font-size: 14px;
     } */
-/* 
+    /* 
     .left_sidebar .brand_logo {
         width: 40px;
         margin: auto;
@@ -1174,12 +1178,15 @@
     .mobile_none {
         display: none;
     }
+
     .top_bar {
         border-radius: 20px;
     }
+
     .main_navbar {
         border-radius: 20px;
     }
+
     .top_bar ul li {
         font-size: 10px;
         margin-left: 8px;
@@ -1206,7 +1213,7 @@
         width: 80%;
     }
 
-    .slider-image .slider-item img{
+    .slider-image .slider-item img {
         border-radius: 15px;
     }
 
@@ -1214,7 +1221,7 @@
         width: 82%;
     }
 
-    .search_by_kw input{
+    .search_by_kw input {
         background-color: #E2E2E2;
         font-size: 10px;
         padding: 9px;
@@ -1233,27 +1240,34 @@
     .search_by_kw button button i {
         font-size: 18px;
     }
+
     .car-paginate-btn {
         width: 40%;
     }
-    .newsletter-section{
+
+    .newsletter-section {
         padding: 40px 10px
     }
-    .newsletter-section form{
+
+    .newsletter-section form {
         width: 100%;
     }
+
     .post_items {
         border-radius: 20px;
     }
+
     .post_items img {
         border-radius: 20px;
     }
+
     .post_items h3 {
         margin: 10px;
         margin-bottom: 15px;
         font-size: 12px;
         line-height: 20px;
     }
+
     .post_items a {
         color: var(--dark-red);
         background-color: var(--light-red);
@@ -1261,15 +1275,19 @@
         margin-left: 10px;
         font-size: 12px;
     }
+
     .mobile_recent_blogs {
         display: block;
     }
+
     .right_aside {
         display: none;
     }
+
     footer {
         padding: 20px 0px 0px;
     }
+
     .mobile_footer {
         display: block
     }
