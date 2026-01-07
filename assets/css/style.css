@@ -3487,6 +3487,10 @@ button.navbar-toggler:focus {
     font-size: 12px;
     font-weight: 500;
 }
+.list-pagination {
+    display: flex;
+    justify-content: space-between;
+}
 
 .list-pagination .pagination span{
     margin-left: 15px;

@@ -1092,88 +1092,6 @@
     }
 }
 
-@media(max-width: 430px) {
-    .hero_section {
-        min-height: 95vh;
-    }
-}
-
-/* @media(max-width: 400px) {
-    .hero_section {
-        min-height: 105vh;
-    }
-
-    .navbar-brand {
-        margin-right: 0;
-    }
-
-    .top_bar ul li {
-        margin-right: 15px;
-        font-size: 12px;
-    }
-
-} */
-
-@media(max-width: 375px) {
-
-    /* .cars_info_box ul {
-        flex-wrap: wrap;
-    }
-
-    .navbar-brand {
-        margin-right: 0;
-    }
-
-    .button.navbar-toggler {
-        margin-left: 5px;
-    }
-
-    .menu {
-        position: relative;
-        display: inline-block;
-        width: 20px !important;
-        height: 20px !important;
-        margin: 5px;
-    }
-
-    .items_list ul li {
-        width: 48%;
-        margin-bottom: 8px;
-    }
-
-    .left_sidebar ul li {
-        width: 15%;
-    }
-
-    .left_sidebar .brand_logo {
-        width: 50px;
-        margin: auto;
-    } */
-}
-
-@media(max-width: 360px) {
-
-    .menu span,
-    .menu span:before,
-    .menu span:after {
-        width: 20px;
-        height: 2px;
-    }
-
-    .menu {
-        margin: 0px !important;
-    }
-
-    .price_button button {
-        font-size: 10px;
-        width: 55%;
-    }
-
-    .price_button p {
-        font-size: 9px;
-    }
-}
-
 @media(max-width: 480px) {
     .mobile_none {
         display: none;
@@ -1290,5 +1208,56 @@
 
     .mobile_footer {
         display: block
+    }
+
+    .car-search-summary{
+        font-size: 12px;
+    }
+    .car-search-summary p{
+        padding-top: 6px;
+    }
+    .list-pagination {
+        display: block;
+    }
+
+    .list-pagination .pagination{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 430px) {
+    .hero_section {
+        min-height: 95vh;
+    }
+}
+
+@media(max-width: 375px) {
+}
+
+@media(max-width: 360px) {
+
+    .menu span,
+    .menu span:before,
+    .menu span:after {
+        width: 20px;
+        height: 2px;
+    }
+
+    .menu {
+        margin: 0px !important;
+    }
+
+    .price_button button {
+        font-size: 10px;
+        width: 55%;
+    }
+
+    .price_button p {
+        font-size: 9px;
+    }
+    .car-search-summary{
+        font-size: 11px;
     }
 }
