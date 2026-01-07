@@ -1170,7 +1170,7 @@
     }
 }
 
-@media(max-width: 393px) {
+@media(max-width: 480px) {
     .mobile_none {
         display: none;
     }
