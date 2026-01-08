@@ -30,6 +30,11 @@
         display: none;
     }
 
+    .brand_list ul li a .brand_logo {
+        width: 25px;
+        margin-right: 0px;
+    }
+
     .right_aside {
         display: none !important;
     }
@@ -64,6 +69,16 @@
 
 @media(max-width: 991px) {
 
+    .top_bar ul,
+    .right_nav_items ul {
+        justify-content: center !important;
+        margin-bottom: 5px;
+    }
+
+    .toggler-btn {
+        display: block;
+        margin-left: 10px;
+    }
 
     .headring_title h4 {
         font-size: 16px;
@@ -422,9 +437,6 @@
 }
 
 @media (max-width: 767px) {
-    .toggler-btn {
-        display: block;
-    }
 
     .heading.desktop_hide .headring_title {
         color: rgb(0, 0, 0);
@@ -806,12 +818,14 @@
     }
 
     .car-info {
+        margin-top: 10px;
         flex-direction: column;
     }
 
     .car-title h2 {
         font-size: 24px;
         margin-bottom: 10px;
+        margin-left: 5px;
     }
 
     .car-title p {

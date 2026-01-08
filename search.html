@@ -26,7 +26,7 @@
         <div class="container">
             <div class="top_bar">
                 <div class="row">
-                    <div class="col-md-6 mobile_none">
+                    <div class="col-lg-6 mobile_none">
                         <ul class="top_bar_left_item">
                             <li>
                                 <i class="fa-solid fa-circle"></i>
@@ -42,7 +42,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <ul class="right_nav_items">
                             <li>
                                 Sept 04, 02:36 (JST) TTB 1 USD = 145.00 Yen
@@ -67,7 +67,7 @@
             <div class="main_navbar">
                 <div class="row">
                     <!-- desktop header  -->
-                    <nav class="navbar navbar-expand-md main_header">
+                    <nav class="navbar navbar-expand-lg main_header">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"><img src="assets/img/top-logo.png" class="img-fluid"
                                     alt="" /></a>
@@ -614,7 +614,7 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="container mt-3">
                         <div class="car-search-summary d-flex justify-content-between">
                             <p><strong>Used vehicles for sale</strong> (4123)</p>
@@ -645,80 +645,89 @@
                                             <span>Pearl</span>
                                         </div>
                                         <p class="my-1">USD 2312</p>
-                                        <button type="button" data-bs-toggle="modal" data-bs-target="#askForBestPriceModal">Ask for The Best Price</button>
+                                        <button type="button" data-bs-toggle="modal"
+                                            data-bs-target="#askForBestPriceModal">Ask for The Best Price</button>
                                     </div>
                                 </div>
                             </div>
 
-<!-- Modal -->
-<div class="modal fade custom-modal" id="askForBestPriceModal" tabindex="-1" aria-labelledby="askForBestPriceModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title" id="askForBestPriceModalLabel">For Your Best Price</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form action="">
-            <div class="modal-body">
-                <div class="d-flex justify-content-between">
-                  <div class="thumb-img me-2">
-                    <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg" alt="">
-                  </div>
-                  <div class="modal-car-details">
-                    <h1>TOYOTA LAND CRUISER PRADO</h1>
-                    <div class="my-2 px-1">
-                      <p class="modal-car-spec">
-                          <span>Auto</span> <i class="v-line"></i>
-                          <span>77000 km</span> <i class="v-line"></i>
-                          <span>2024</span> <i class="v-line"></i>
-                          <span>Pearl</span> <i class="v-line"></i>
-                          <span>1800 CC</span>
-                        </p>
-                        <h2 class="my-2">USD 16,817</h2>
-                        <p class="modal-car-country-price">
-                          <span>Price : 16,817</span> <i class="v-line"></i>
-                          <span>Cost : 100</span> <i class="v-line"></i>
-                          <span>Total : 16,917</span>
-                        </p>
-                    </div>
-                  </div>
-                </div>
-                <hr>
+                            <!-- Modal -->
+                            <div class="modal fade custom-modal" id="askForBestPriceModal" tabindex="-1"
+                                aria-labelledby="askForBestPriceModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title" id="askForBestPriceModalLabel">For Your Best Price
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <form action="">
+                                            <div class="modal-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="thumb-img me-2">
+                                                        <img src="./assets/img/SUZUKICARRY TRUCK KU 3 WAY AWD 4WD.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="modal-car-details">
+                                                        <h1>TOYOTA LAND CRUISER PRADO</h1>
+                                                        <div class="my-2 px-1">
+                                                            <p class="modal-car-spec">
+                                                                <span>Auto</span> <i class="v-line"></i>
+                                                                <span>77000 km</span> <i class="v-line"></i>
+                                                                <span>2024</span> <i class="v-line"></i>
+                                                                <span>Pearl</span> <i class="v-line"></i>
+                                                                <span>1800 CC</span>
+                                                            </p>
+                                                            <h2 class="my-2">USD 16,817</h2>
+                                                            <p class="modal-car-country-price">
+                                                                <span>Price : 16,817</span> <i class="v-line"></i>
+                                                                <span>Cost : 100</span> <i class="v-line"></i>
+                                                                <span>Total : 16,917</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
 
-                <div class="form-group mb-1">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
-                </div>
-                <div class="form-group mb-1">
-                    <label for="country">Country*</label>
-                    <select name="" id="country" class="form-select">
-                        <option selected disabled>Select Country</option>
-                    </select>
-                </div>
-                <div class="form-group mb-1">
-                    <label for="phone">Tell (Whatsapp)*</label>
-                    <input type="text" class="form-control" placeholder="Enter your phone number"id="phone">
-                </div>
-                <div class="form-group mb-1">
-                    <label for="comment">Comment*</label>
-                    <textarea name="" id="comment" class="form-control" placeholder="Write here" rows="3"></textarea>
-                </div>
-      
-                
-              </div>
-              <div class="modal-footer d-flex justify-content-between">
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" value="1" id="inquiry-check" checked>
-                    <label class="form-check-label" for="inquiry-check">
-                        Subscribe newsletter for discount
-                    </label>
-                </div>
-                <button type="submit">Submit</button>
-              </div>
-        </form>
-      </div>
-    </div>
-  </div>
+                                                <div class="form-group mb-1">
+                                                    <label for="name">Name*</label>
+                                                    <input type="text" id="name" class="form-control"
+                                                        placeholder="Enter your name">
+                                                </div>
+                                                <div class="form-group mb-1">
+                                                    <label for="country">Country*</label>
+                                                    <select name="" id="country" class="form-select">
+                                                        <option selected disabled>Select Country</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group mb-1">
+                                                    <label for="phone">Tell (Whatsapp)*</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter your phone number" id="phone">
+                                                </div>
+                                                <div class="form-group mb-1">
+                                                    <label for="comment">Comment*</label>
+                                                    <textarea name="" id="comment" class="form-control"
+                                                        placeholder="Write here" rows="3"></textarea>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-between">
+                                                <div class="form-check mb-3">
+                                                    <input class="form-check-input" type="checkbox" value="1"
+                                                        id="inquiry-check" checked>
+                                                    <label class="form-check-label" for="inquiry-check">
+                                                        Subscribe newsletter for discount
+                                                    </label>
+                                                </div>
+                                                <button type="submit">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="col-md-6 col-sm-12 mb-3">
                                 <div class="search-car-card d-flex">
@@ -1016,18 +1025,29 @@
                             <div class="list-pagination">
                                 <p>Cars Per Page <span>32 of 5529</span></p>
                                 <div class="pagination">
-                                    
+
                                     <span><a href="">
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.23167 11.06L0.885 6.71333C0.371667 6.2 0.371667 5.36 0.885 4.84667L5.23167 0.5" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.2971 11.06L6.95043 6.71333C6.4371 6.2 6.4371 5.36 6.95043 4.84667L11.2971 0.5" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                                    </a></span>
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.23167 11.06L0.885 6.71333C0.371667 6.2 0.371667 5.36 0.885 4.84667L5.23167 0.5"
+                                                    stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M11.2971 11.06L6.95043 6.71333C6.4371 6.2 6.4371 5.36 6.95043 4.84667L11.2971 0.5"
+                                                    stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </a></span>
                                     <span><a href="">
-                                        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.23167 11.06L0.885 6.71333C0.371667 6.2 0.371667 5.36 0.885 4.84667L5.23167 0.5" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                                    </a></span>
+                                            <svg width="6" height="12" viewBox="0 0 6 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.23167 11.06L0.885 6.71333C0.371667 6.2 0.371667 5.36 0.885 4.84667L5.23167 0.5"
+                                                    stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </a></span>
                                     <span class="page-no active-page"><a href="">1</a></span>
                                     <span class="page-no"><a href="">2</a></span>
                                     <span class="page-no"><a href="">3</a></span>
@@ -1036,17 +1056,28 @@
                                     <span class="page-no"><a href="">12</a></span>
                                     <span class="page-no"><a href="">13</a></span>
                                     <span><a href="">
-                                        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 11.06L4.84667 6.71333C5.36 6.2 5.36 5.36 4.84667 4.84667L0.5 0.5" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                                    </a></span>
+                                            <svg width="6" height="12" viewBox="0 0 6 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.5 11.06L4.84667 6.71333C5.36 6.2 5.36 5.36 4.84667 4.84667L0.5 0.5"
+                                                    stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </a></span>
                                     <span><a href="">
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.56445 11.06L10.9111 6.71333C11.4245 6.2 11.4245 5.36 10.9111 4.84667L6.56445 0.5" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M0.5 11.06L4.84667 6.71333C5.36 6.2 5.36 5.36 4.84667 4.84667L0.5 0.5" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.56445 11.06L10.9111 6.71333C11.4245 6.2 11.4245 5.36 10.9111 4.84667L6.56445 0.5"
+                                                    stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M0.5 11.06L4.84667 6.71333C5.36 6.2 5.36 5.36 4.84667 4.84667L0.5 0.5"
+                                                    stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
 
-                                    </a></span>
+                                        </a></span>
                                 </div>
                             </div>
                         </div>
