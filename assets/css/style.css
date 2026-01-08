@@ -3559,7 +3559,7 @@ button.navbar-toggler:focus {
 }
 
 .car-thumb-details .price {
-    padding: 10px 30px;
+    padding: 10px 12px;
     background-color: #F8F8F8;
     border-radius: 30px;
     vertical-align: middle;
@@ -3567,6 +3567,7 @@ button.navbar-toggler:focus {
 
 .car-thumb-details .price h2 {
     margin-right: 15px;
+    margin-top: 4px;
     font-weight: 500;
     color: var(--dark-red);
     font-size: 18px;
@@ -3576,6 +3577,7 @@ button.navbar-toggler:focus {
 .car-thumb-details .price button {
     border: none;
     background-color: var(--dark-red);
+    border: 1px solid var(--dark-red);
     color: #fff;
     padding: 4px 8px;
     border-radius: 30px;

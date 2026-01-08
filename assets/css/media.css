@@ -800,6 +800,76 @@
         width: 70% !important;
     }
 
+    /* Single Product Page Mobile Fixes */
+    .tablet-hide {
+        display: none !important;
+    }
+
+    .car-info {
+        flex-direction: column;
+    }
+
+    .car-title h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .car-title p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .price h2 {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    .car-galleries .col-md-8,
+    .car-galleries .col-md-4 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .car-galleries .col-md-4 {
+        margin-top: 10px;
+    }
+
+    .car-galleries .col-md-4 .row>div {
+        width: 33.33% !important;
+        padding: 2px !important;
+    }
+
+    .car-galleries .col-md-4 .row>div:nth-child(n+3):not(:last-child) {
+        display: none !important;
+    }
+
+    .car-full-details .col-4 {
+        width: 50%;
+        /* 2 items per row on mobile for details */
+    }
+
+    .car-full-details .info {
+        padding: 15px 5px;
+    }
+
+    .car-full-details .info h6 {
+        font-size: 12px;
+    }
+
+    .car-full-details .info img {
+        width: 20px;
+    }
+
+    .car-specifications .col-sm-6 {
+        width: 50%;
+        /* 2 items per row for specs */
+    }
+
+    .spec-item {
+        font-size: 12px;
+        padding: 8px;
+    }
+
     .cars_info_box ul {
         flex-wrap: wrap;
     }
@@ -1210,22 +1280,25 @@
         display: block
     }
 
-    .car-search-summary{
+    .car-search-summary {
         font-size: 12px;
     }
-    .car-search-summary p{
+
+    .car-search-summary p {
         padding-top: 6px;
     }
+
     .list-pagination {
         display: block;
     }
 
-    .list-pagination .pagination{
+    .list-pagination .pagination {
         margin-top: 10px;
         display: flex;
         justify-content: space-between;
     }
-    .teams .our_ceo{
+
+    .teams .our_ceo {
         display: block;
     }
 }
@@ -1236,8 +1309,7 @@
     }
 }
 
-@media(max-width: 375px) {
-}
+@media(max-width: 375px) {}
 
 @media(max-width: 360px) {
 
@@ -1260,7 +1332,8 @@
     .price_button p {
         font-size: 9px;
     }
-    .car-search-summary{
+
+    .car-search-summary {
         font-size: 11px;
     }
 }
