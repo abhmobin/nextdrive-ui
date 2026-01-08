@@ -1,4 +1,4 @@
-:root{
+:root {
     --light-red: #FFEFF0;
     --dark-red: #CB0A07;
 }
@@ -56,7 +56,7 @@ header {}
 }
 
 .top_bar ul li i {
-    color:  var(--dark-red);
+    color: var(--dark-red);
     margin-right: 10px;
     font-size: 6px;
 }
@@ -72,6 +72,7 @@ header {}
     margin-left: 20px;
     width: 150px;
 }
+
 /*
 .main_bar {
     border: 1px solid rgb(219, 219, 219);
@@ -89,7 +90,7 @@ header {}
 }
 
 .right_nav_items ul li {
-   /* margin-left: 10px; */
+    /* margin-left: 10px; */
 }
 
 .right_nav_items ul li a {}
@@ -134,6 +135,7 @@ header .nav-item {
 .toggler-btn {
     display: none;
 }
+
 header .nav-link {
     color: rgb(0, 0, 0);
     font-size: 12px;
@@ -617,7 +619,7 @@ label[data-color="black m"] {
     cursor: pointer !important;
 }
 
-.popular-search ul{
+.popular-search ul {
     text-align: left;
 }
 
@@ -626,7 +628,7 @@ label[data-color="black m"] {
     margin-right: 10px;
 }
 
-.popular-search ul li a{
+.popular-search ul li a {
     line-height: 1.5;
 }
 
@@ -789,23 +791,23 @@ label[data-color="black m"] {
     padding: 40px;
 }
 
-.newsletter-section p{
+.newsletter-section p {
     font-size: 12px;
     color: #f8f8f8;
     font-weight: 500;
 }
 
-.newsletter-section h3{
+.newsletter-section h3 {
     color: var(--dark-red);
     font-size: 24px;
     font-weight: bold;
 }
 
-.newsletter-section form{
+.newsletter-section form {
     margin-top: 5px;
 }
 
-.newsletter-section form input{
+.newsletter-section form input {
     padding: 10px 16px;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -897,7 +899,7 @@ footer p a {
     display: none;
 }
 
-.quick_list h5{
+.quick_list h5 {
     color: #351616;
     font-weight: 500;
     font-size: 16px;
@@ -1164,10 +1166,11 @@ button.navbar-toggler:focus {
     font-size: 14px;
 }
 
-.popular-search ul li{
+.popular-search ul li {
     margin-top: 15px;
     margin-bottom: 20px;
 }
+
 .popular-search li a {
     font-weight: 400;
     font-size: 12px;
@@ -1232,14 +1235,14 @@ button.navbar-toggler:focus {
     font-size: 12px;
     font-weight: 500;
 }
+
 .search-form .form-select {
     border-radius: 30px;
     font-size: 12px;
     padding: .375rem .25rem .35rem .375rem
-
 }
 
-.search-form .form-select option{
+.search-form .form-select option {
     font-size: 12px;
 }
 
@@ -2795,7 +2798,7 @@ button.navbar-toggler:focus {
     margin-bottom: 10px;
 }
 
-.slider-image .slider-item img{
+.slider-image .slider-item img {
     border: none;
     border-radius: 30px;
 }
@@ -2814,6 +2817,7 @@ button.navbar-toggler:focus {
     border-radius: 30px;
     padding-top: 10px;
 }
+
 .bid-cars {
     color: var(--dark-red);
     background-color: var(--light-red);
@@ -2851,33 +2855,33 @@ button.navbar-toggler:focus {
     margin-right: 50px;
 }
 
-.car_item_heading span{
+.car_item_heading span {
     font-size: 16px;
     font-weight: 600;
     color: #623030;
 }
 
-.car_item_heading p{
+.car_item_heading p {
     font-size: 12px;
     font-weight: 400;
     color: #8E8D92;
-    
+
 }
 
-.popular-car-requests .popular-car-requests-item{
+.popular-car-requests .popular-car-requests-item {
     width: 100%;
     background-color: #F8F8F8;
     border-radius: 30px;
     padding: 8px 30px;
 }
 
-.popular-car-requests a{
+.popular-car-requests a {
     font-size: 12px;
     color: #351616;
     line-height: 30px;
 }
 
-.popular-car-requests .popular-car-requests-item:hover{
+.popular-car-requests .popular-car-requests-item:hover {
     border: 1px solid var(--dark-red);
     background-color: var(--light-red);
 }
@@ -3132,7 +3136,7 @@ button.navbar-toggler:focus {
     font-weight: normal;
 }
 
-.v-line{
+.v-line {
     height: 12px;
     border: 1px solid #E2E2E2;
     display: inline-block;
@@ -3372,9 +3376,10 @@ button.navbar-toggler:focus {
 .country-section .sec-title {
     background-color: #F0F0F0;
     border-radius: 20px;
-    
+
 }
-.country-section .sec-title h4{
+
+.country-section .sec-title h4 {
     font-size: 12px;
     color: #495057;
     padding: 8px 14px;
@@ -3422,7 +3427,7 @@ button.navbar-toggler:focus {
 
 
 /* search page */
-.car-search-summary{
+.car-search-summary {
     font-size: 14px;
 }
 
@@ -3435,6 +3440,7 @@ button.navbar-toggler:focus {
     padding: 5px 10px;
     border-radius: 20px;
 }
+
 .car-search-summary .sorting select {
     border: none;
     background-color: transparent;
@@ -3446,14 +3452,14 @@ button.navbar-toggler:focus {
     border-radius: 20px;
 }
 
-.search-car-card .car-details h3{
+.search-car-card .car-details h3 {
     font-size: 14px;
     font-weight: 500;
     color: #351616;
     text-transform: uppercase;
 }
 
-.search-car-card .car-spec{
+.search-car-card .car-spec {
     font-size: 12px;
     font-weight: 500;
     color: #8E8D92;
@@ -3461,11 +3467,11 @@ button.navbar-toggler:focus {
     border-radius: 10px;
 }
 
-.search-car-card .car-spec span{
+.search-car-card .car-spec span {
     padding: 3px 6px;
 }
 
-.search-car-card .car-spec i{
+.search-car-card .car-spec i {
     height: 12px;
     border: 1px solid #FFFFFF;
     display: inline-block;
@@ -3487,18 +3493,19 @@ button.navbar-toggler:focus {
     font-size: 12px;
     font-weight: 500;
 }
+
 .list-pagination {
     display: flex;
     justify-content: space-between;
 }
 
-.list-pagination .pagination span{
+.list-pagination .pagination span {
     margin-left: 15px;
     font-size: 12px;
     font-weight: 500;
 }
 
-.list-pagination .pagination .page-mid{
+.list-pagination .pagination .page-mid {
     margin-top: -2px;
     font-weight: 700;
 }
@@ -3508,29 +3515,29 @@ button.navbar-toggler:focus {
     color: #000;
 }
 
-.list-pagination .pagination a:hover{
+.list-pagination .pagination a:hover {
     color: var(--dark-red);
 }
 
-.list-pagination .pagination a:hover svg path{
-    stroke:var(--dark-red)
+.list-pagination .pagination a:hover svg path {
+    stroke: var(--dark-red)
 }
 
-.list-pagination .pagination .active-page{
+.list-pagination .pagination .active-page {
     background-color: var(--dark-red);
     height: 20px;
     width: 20px;
     border-radius: 50%;
 }
 
-.list-pagination .pagination .active-page a{
+.list-pagination .pagination .active-page a {
     padding: 7px;
     padding-top: 10px;
     color: #fff;
 }
 
 /* car details page */
-.car-thumb-details .car-title h2{
+.car-thumb-details .car-title h2 {
     font-weight: 600;
     font-size: 16px;
 }
@@ -3584,11 +3591,11 @@ button.navbar-toggler:focus {
 }
 
 
-.car-thumb-details .car-galleries img{
+.car-thumb-details .car-galleries img {
     border-radius: 20px;
 }
 
-.car-thumb-details .car-galleries .small-img img{
+.car-thumb-details .car-galleries .small-img img {
     padding: 5px
 }
 
@@ -3602,7 +3609,7 @@ button.navbar-toggler:focus {
 }
 
 .gallery-more-box {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     height: 100px;
     cursor: pointer;
     border-radius: 6px;
@@ -3641,7 +3648,7 @@ button.navbar-toggler:focus {
     outline: 3px solid #ff0000;
 }
 
-    /* Optional: highlight selected */
+/* Optional: highlight selected */
 .thumb-strip:active,
 .thumb-strip:focus,
 .thumb-strip:hover {
@@ -3671,6 +3678,7 @@ button.navbar-toggler:focus {
     border-radius: 4px;
     flex: 0 0 auto;
 }
+
 .gallery-more-wrapper {
     position: relative;
     cursor: pointer;
@@ -3678,7 +3686,8 @@ button.navbar-toggler:focus {
 
 .gallery-more-img {
     width: 100%;
-    height: 100px;     /* same as other thumbnails */
+    height: 100px;
+    /* same as other thumbnails */
     object-fit: cover;
     border-radius: 20px;
 }
@@ -3690,7 +3699,7 @@ button.navbar-toggler:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0, 0, 0, 0.55);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3703,7 +3712,8 @@ button.navbar-toggler:focus {
 /* ARROWS */
 .modal-arrow {
     position: absolute;
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 50;
     background: var(--light-red);
     color: #fff;
@@ -3714,6 +3724,9 @@ button.navbar-toggler:focus {
     border-radius: 50%;
     cursor: pointer;
     transition: 0.1s ease all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .left-arrow {
@@ -3732,13 +3745,13 @@ button.navbar-toggler:focus {
     stroke: white
 }
 
-.car-full-details .details{
+.car-full-details .details {
     background-color: #F8F8F8;
     padding: 10px 20px;
     border-radius: 20px;
 }
 
-.car-full-details .details .info{
+.car-full-details .details .info {
     background-color: #fff;
     text-align: center;
     margin: 10px 0;
@@ -3943,6 +3956,7 @@ button.navbar-toggler:focus {
 .teams .team-member img {
     border-radius: 30px;
 }
+
 .teams .team-member .designation,
 .teams .team-member .quote {
     font-size: 14px;
@@ -3955,9 +3969,11 @@ button.navbar-toggler:focus {
     font-size: 12px;
     font-weight: 500;
 }
-.teams .our_ceo{
+
+.teams .our_ceo {
     display: flex;
 }
+
 .bank-details .bank-infos {
     background-color: #F8F8F8;
     border-radius: 20px;
@@ -3967,12 +3983,15 @@ button.navbar-toggler:focus {
     font-size: 14px;
     font-weight: 600;
 }
+
 .bank-details .bank-infos table tr {
     border-bottom: 1px solid #fff;
 }
+
 .bank-details .bank-infos table tr:last-child {
     border: none;
 }
+
 .bank-details .bank-infos table th {
     color: #7B7A80;
     padding: 10px 10px;
@@ -3991,14 +4010,16 @@ button.navbar-toggler:focus {
     padding: 30px 20px;
     border-radius: 30px;
 }
-.contact-details .liner{
+
+.contact-details .liner {
     height: 1px;
     width: 65%;
     background-color: #E6E6E6;
     margin: 10px auto;
 }
+
 .contact-details .contact-info h3,
-.contact-details .contact-info p{
+.contact-details .contact-info p {
     font-size: 14px;
     font-weight: 500;
 }
@@ -4008,12 +4029,12 @@ button.navbar-toggler:focus {
 
 }
 
-.contact-details .info h3{
+.contact-details .info h3 {
     color: #7B7A80;
 }
 
 .contact-details .info p,
-.contact-details .info a{
+.contact-details .info a {
     text-decoration: none;
     color: #623030;
 }
@@ -4025,7 +4046,7 @@ button.navbar-toggler:focus {
     text-align: center;
 }
 
-.contact-details .form .input-group-text{
+.contact-details .form .input-group-text {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     background-color: #fff;
@@ -4062,7 +4083,7 @@ button.navbar-toggler:focus {
     border-radius: 20px;
     max-width: 1000px;
     margin: auto;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .opening-title {
@@ -4079,7 +4100,8 @@ button.navbar-toggler:focus {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 25px;
     position: relative;
-    padding: 0 10px; /* ensures line aligns with vertical dividers */
+    padding: 0 10px;
+    /* ensures line aligns with vertical dividers */
 }
 
 /* ======================================
@@ -4088,12 +4110,15 @@ button.navbar-toggler:focus {
 .opening-grid::before {
     content: "";
     position: absolute;
-    top: calc(50%);     /* EXACT center between 1st & 2nd row */
+    top: calc(50%);
+    /* EXACT center between 1st & 2nd row */
     left: 0;
     width: 100%;
     height: 1px;
-    background: #E6E6E6;   /* smoother than #e5e5e5 */
-    z-index: 1;         /* behind vertical dividers */
+    background: #E6E6E6;
+    /* smoother than #e5e5e5 */
+    z-index: 1;
+    /* behind vertical dividers */
 }
 
 /* DAY BOX */
@@ -4101,7 +4126,8 @@ button.navbar-toggler:focus {
     text-align: center;
     padding: 0 20px;
     position: relative;
-    z-index: 2; /* put box ABOVE horizontal line */
+    z-index: 2;
+    /* put box ABOVE horizontal line */
 }
 
 /* VERTICAL DIVIDERS (ON TOP OF LINE) */
@@ -4110,7 +4136,7 @@ button.navbar-toggler:focus {
 }
 
 /* Remove last divider of row 1 */
-.opening-grid > :nth-child(4) {
+.opening-grid> :nth-child(4) {
     border-right: none;
 }
 
@@ -4147,8 +4173,8 @@ button.navbar-toggler:focus {
     }
 
     /* Remove row breaks */
-    .opening-grid > :nth-child(3),
-    .opening-grid > :nth-child(6) {
+    .opening-grid> :nth-child(3),
+    .opening-grid> :nth-child(6) {
         border-right: none;
     }
 }
@@ -4181,12 +4207,12 @@ button.navbar-toggler:focus {
     list-style: none;
 }
 
-.blog-categories ul li{
+.blog-categories ul li {
     display: inline;
     padding-right: 10px;
 }
 
-.blog-categories ul button{
+.blog-categories ul button {
     border: none;
     padding: 5px 12px;
     border-radius: 20px;
@@ -4197,13 +4223,13 @@ button.navbar-toggler:focus {
     background-color: var(--light-red);
 }
 
-.custom-modal .modal-content{
+.custom-modal .modal-content {
     border-radius: 30px;
     border: 1px solid #F8F8F8;
     overflow: hidden;
 }
 
-.custom-modal .modal-footer{
+.custom-modal .modal-footer {
     border: none;
 }
 
@@ -4239,20 +4265,20 @@ button.navbar-toggler:focus {
     opacity: 1;
 }
 
-.custom-modal .thumb-img img{
+.custom-modal .thumb-img img {
     border-radius: 20px;
     max-height: 110px;
     max-width: 100%;
     object-fit: cover;
 }
 
-.custom-modal .modal-car-details h1{
+.custom-modal .modal-car-details h1 {
     font-size: 16px;
     color: #351616;
     font-weight: 500;
 }
 
-.custom-modal .modal-car-details .modal-car-spec{
+.custom-modal .modal-car-details .modal-car-spec {
     font-size: 12px;
     color: #8E8D92;
 }
@@ -4263,7 +4289,7 @@ button.navbar-toggler:focus {
     font-weight: 600;
 }
 
-.custom-modal .modal-car-details .modal-car-country-price{
+.custom-modal .modal-car-details .modal-car-country-price {
     font-size: 12px;
     font-weight: 500;
     color: #292826;
@@ -4274,6 +4300,7 @@ button.navbar-toggler:focus {
     font-size: 10px;
     font-weight: 500;
 }
+
 .custom-modal form input,
 .custom-modal form select,
 .custom-modal form textarea {
@@ -4292,6 +4319,7 @@ button.navbar-toggler:focus {
     font-size: 12px;
     color: #727489;
 }
+
 .custom-modal form .form-check-input {
     border-color: #000;
     padding: 6px;
@@ -4349,4 +4377,198 @@ button.navbar-toggler:focus {
 
 .mobile_footer {
     display: none
+}
+
+/* Gallery Modal Styles */
+#galleryModal .modal-content {
+    background-color: #fff;
+}
+
+.gallery-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.gallery-modal-title h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #292826;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.gallery-modal-specs {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    font-size: 12px;
+    color: #8E8D92;
+}
+
+.gallery-modal-specs span {
+    position: relative;
+    padding-right: 8px;
+}
+
+.gallery-modal-specs span:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 12px;
+    width: 1px;
+    background-color: #E2E2E2;
+}
+
+.gallery-modal-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-download-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border: 1px solid var(--dark-red);
+    color: var(--dark-red);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-download-all:hover {
+    background-color: var(--dark-red);
+    color: #fff;
+}
+
+.btn-download-all svg {
+    width: 14px;
+    height: 14px;
+}
+
+.btn-close-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: #292826;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-close-gallery:hover {
+    color: var(--dark-red);
+}
+
+.btn-close-gallery svg {
+    width: 14px;
+    height: 14px;
+}
+
+#galleryModal .modal-body {
+    padding: 30px;
+    background-color: #fff;
+}
+
+/* Mobile Modal Info - Hidden on Desktop */
+.mobile-modal-info {
+    display: none;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .gallery-modal-header {
+        padding: 15px 20px;
+    }
+
+    /* Hide Desktop Elements */
+    .gallery-modal-specs,
+    .btn-download-all {
+        display: none;
+    }
+
+    /* Adjust Header Layout */
+    .gallery-modal-header {
+        justify-content: space-between;
+    }
+
+    .gallery-modal-title h5 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    /* Show Mobile Info */
+    .mobile-modal-info {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .mobile-specs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+        background-color: #F8F8F8;
+        padding: 8px 15px;
+        border-radius: 20px;
+        width: fit-content;
+    }
+
+    .mobile-specs span {
+        font-size: 12px;
+        color: #8E8D92;
+        font-weight: 500;
+    }
+
+    .mobile-specs .divider {
+        width: 1px;
+        height: 12px;
+        background-color: #E2E2E2;
+        display: inline-block;
+    }
+
+    .mobile-download-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--dark-red);
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .mobile-download-link:hover {
+        color: var(--dark-red);
+    }
+
+    /* Adjust Modal Body */
+    #galleryModal .modal-body {
+        padding: 15px;
+    }
+
+    /* Hide Arrows on Mobile (Optional, based on design preference for cleaner look) */
+    .modal-arrow {
+        display: none;
+    }
+
+    .thumb-scroll-container {
+        gap: 4px;
+    }
+
+    .thumb-strip {
+        width: 60px;
+        height: 45px;
+    }
 }
