@@ -500,7 +500,91 @@
         padding: 8px;
     }
 }
+@media (max-width: 768px) {
+    .gallery-modal-header {
+        padding: 15px 20px;
+    }
 
+    /* Hide Desktop Elements */
+    .gallery-modal-specs,
+    .btn-download-all {
+        display: none;
+    }
+
+    /* Adjust Header Layout */
+    .gallery-modal-header {
+        justify-content: space-between;
+    }
+
+    .gallery-modal-title h5 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    /* Show Mobile Info */
+    .mobile-modal-info {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .mobile-specs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+        background-color: #F8F8F8;
+        padding: 8px 15px;
+        border-radius: 20px;
+        width: fit-content;
+    }
+
+    .mobile-specs span {
+        font-size: 12px;
+        color: #8E8D92;
+        font-weight: 500;
+    }
+
+    .mobile-specs .divider {
+        width: 1px;
+        height: 12px;
+        background-color: #E2E2E2;
+        display: inline-block;
+    }
+
+    .mobile-download-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--dark-red);
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .mobile-download-link:hover {
+        color: var(--dark-red);
+    }
+
+    /* Adjust Modal Body */
+    #galleryModal .modal-body {
+        padding: 15px;
+    }
+
+    /* Hide Arrows on Mobile (Optional, based on design preference for cleaner look) */
+    .modal-arrow {
+        display: none;
+    }
+
+    .thumb-scroll-container {
+        gap: 4px;
+    }
+
+    .thumb-strip {
+        width: 60px;
+        height: 45px;
+    }
+}
 @media(max-width: 600px) {
     /* .left_sidebar ul {
         display: flex;
