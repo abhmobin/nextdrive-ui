@@ -73,12 +73,7 @@ header {}
     width: 150px;
 }
 
-/*
-.main_bar {
-    border: 1px solid rgb(219, 219, 219);
-    padding: 5px 40px;
-}
-*/
+
 .right_nav_items {
     justify-content: end;
 }
@@ -89,9 +84,7 @@ header {}
     list-style: none;
 }
 
-.right_nav_items ul li {
-    /* margin-left: 10px; */
-}
+.right_nav_items ul li {}
 
 .right_nav_items ul li a {}
 
@@ -121,7 +114,7 @@ header {}
     font-weight: 600;
     line-height: 100%;
     background: transparent;
-    /* padding: 6px 10px; */
+
 }
 
 .currency select option {
